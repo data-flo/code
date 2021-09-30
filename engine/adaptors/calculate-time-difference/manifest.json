@@ -1,0 +1,51 @@
+
+{
+  "description": "Calculates the time difference (in a specified unit of measurement) between two datatable columns.",
+  "category": "Data Manipulation",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable."
+    },
+    {
+      "name": "reference column",
+      "type": "text",
+      "description": "The name of the column containing reference date/time values."
+    },
+    {
+      "name": "reference format",
+      "type": "text",
+      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nDefaults to `ISO 8601`.",
+      "default": "ISO8601"
+    },
+    {
+      "name": "value column",
+      "type": "text",
+      "description": "The name of the column containing date/time values."
+    },
+    {
+      "name": "value format",
+      "type": "text",
+      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nDefaults to `ISO 8601`.",
+      "default": "ISO8601"
+    },
+    {
+      "name": "difference unit",
+      "type": "text",
+      "description": "The unit of time difference measurement.\nThe supported measurements are `years`, `months`, `weeks`, `days`, `hours`, `minutes`, or `seconds`"
+    },
+    {
+      "name": "target column",
+      "type": "text",
+      "description": "The name of the column to which time difference values will be added."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable with formatted values."
+    }
+  ]
+}

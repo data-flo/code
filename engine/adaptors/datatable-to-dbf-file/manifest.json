@@ -1,0 +1,29 @@
+{
+  "description": "Creates DBF files from a datatable.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "Data to be imported."
+    },
+    {
+      "name": "columns",
+      "type": "map",
+      "description": "A map of column name to data type."
+    },
+    {
+      "name": "filename",
+      "type": "text",
+      "description": "The name of the file to create.\nDefaults to `file.dbf`.",
+      "default": "file.dbf"
+    }
+  ],
+  "output": [
+    {
+      "name": "dbf",
+      "type": "file",
+      "description": ""
+    }
+  ]
+}

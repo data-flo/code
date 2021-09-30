@@ -1,0 +1,43 @@
+{
+  "description": "Uploads metadata to COG-UK CLIMB via the Majora API\nSee https://docs.covid19.climb.ac.uk/majora-api.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "The data to be submitted."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": "COG-UK CLIMB username."
+    },
+    {
+      "name": "token",
+      "type": "text",
+      "description": "COG-UK CLIMB token (secret API key)."
+    }
+  ],
+  "output": [
+    {
+      "name": "created",
+      "type": "list",
+      "description": "A list of IDs which have been created."
+    },
+    {
+      "name": "updated",
+      "type": "list",
+      "description": "A list of IDs which have been updated."
+    },
+    {
+      "name": "ignored",
+      "type": "list",
+      "description": "A list of IDs which have been ignored due to errors."
+    },
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "The datatable containing status and error messages for each submitted sample."
+    }
+  ]
+}

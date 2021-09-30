@@ -1,0 +1,41 @@
+{
+  "description": "Saves a file to a folder in Google Drive.\nThe folder should be shared to with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "file",
+      "type": "file",
+      "description": "A file to be uploaded."
+    },
+    {
+      "name": "file url",
+      "type": "url",
+      "description": "The URL of an existing file on Google Drive to be updated. Leave empty to create a new file.",
+      "default": null
+    },
+    {
+      "name": "folder",
+      "type": "url",
+      "description": "The URL of the folder on Google Drive. Leave empty if updating a file.",
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the file.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "url",
+      "type": "url",
+      "description": "The Google Drive URL of the created file."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the created file."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "description": "Creates an Epicollect5 form from a WHONET lab data.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "laboratoryType",
+      "type": "text"
+    },
+    {
+      "name": "wards",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "institutions",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "departments",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "antibiotics",
+      "type": "datatable",
+      "description": "A datatable containing `code`, `name`, and `test` columns."
+    },
+    {
+      "name": "specimenTypes",
+      "type": "datatable",
+      "description": "A datatable containing `HUMAN`, `C_ENGLISH`, and `ENGLISH` columns."
+    },
+    {
+      "name": "organisms",
+      "type": "datatable",
+      "description": "A datatable containing `ORG`, `ORGANISM`, and `COMMON` columns."
+    }
+  ],
+  "output": [
+    {
+      "name": "form",
+      "type": "text",
+      "description": "Epicollect form."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "description": "Returns a portion of a list into a new list selected from begin to end.",
+  "category": "List Manipulation",
+  "input": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A list to be sliced."
+    },
+    {
+      "name": "start",
+      "type": "integer",
+      "default": 1,
+      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `1` (first element in the list)."
+    },
+    {
+      "name": "end",
+      "type": "integer",
+      "default": null,
+      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `-1` (the last element in the list)."
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": null,
+      "description": "A positive integer specifying a limit on the number of elements to be extracted.\nDefaults to `null` (no limit)."
+    }
+  ],
+  "output": [
+    {
+      "name": "values",
+      "type": "list",
+      "description": "A new list containing the extracted elements."
+    }
+  ]
+}

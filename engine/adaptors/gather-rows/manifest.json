@@ -1,0 +1,35 @@
+{
+  "description": "Gathers rows in wide format to long format. See http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable in wide format."
+    },
+    {
+      "name": "columns",
+      "type": "list",
+      "description": "Columns to keep."
+    },
+    {
+      "name": "key",
+      "type": "text",
+      "description": "The name of the column to which keys are added.\nDefaults to `key`.",
+      "default": "key"
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The name of the column to which values are added.\nDefaults to `value`.",
+      "default": "value"
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable in long format."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Saira Semi Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Saira Semi Condensed Light'), url(SairaSemiCondensed-Light.ttf);
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Saira Semi Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Saira Semi Condensed Medium'), url(SairaSemiCondensed-Medium.ttf);
+}

@@ -1,0 +1,97 @@
+:root {
+  --cgps-purple-primary: #673c8f;
+  --cgps-purple-secondary: #a285bc;
+  --cgps-green-primary: hsl(193, 22%, 68%);
+
+  --grey-neutral-100: hsl(0, 0%, 93%);
+  --grey-neutral-200: hsl(0, 0%, 83%);
+  --grey-neutral-300: hsl(0, 0%, 73%);
+  --grey-neutral-550: hsl(0, 0%, 36%);
+  --grey-neutral-750: hsl(0, 0%, 26%);
+
+  --grey-cool-100: hsl(271, 20%, 93%);
+  --grey-cool-200: hsl(271, 20%, 83%);
+  --grey-cool-300: hsl(271, 20%, 73%);
+  --grey-cool-400: hsl(270, 27%, 46%);
+  --grey-cool-550: hsl(271, 30%, 36%);
+  --grey-cool-750: hsl(271, 30%, 26%);
+}
+
+html {
+  overflow-y: auto !important;
+}
+
+.v-tabs__div.primary--text {
+  color: #fff !important;
+}
+
+.theme--light.small.v-input {
+  max-height: 32px;
+}
+.theme--light.small.v-input .v-input__control {
+  height: 32px;
+  min-height: auto;
+}
+.theme--light.small.v-input input {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-size: 13px;
+}
+.theme--light.small.v-input .v-input__slot {
+  margin: 0;
+  height: 32px;
+  min-height: 32px;
+  border-width: 1px !important;
+  padding: 0 4px !important;
+}
+.theme--light.small.v-text-field--outline .v-input__slot {
+  background-color: #fcfcfc !important;
+}
+.theme--light.small.v-input:not(.v-input--is-focused) .v-input__slot:hover {
+  border-width: 1px;
+}
+.theme--light.small.v-input .v-text-field__slot {
+  height: 32px;
+  margin-left: 24px;
+}
+.theme--light.small.v-input .v-input__append-inner,
+.theme--light.small.v-input .v-input__append-outer,
+.theme--light.small.v-input .v-input__prepend-inner,
+.theme--light.small.v-input .v-input__prepend-outer {
+  margin-top: 3px !important;
+}
+.theme--light.small.v-input .v-input__prepend-outer {
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  z-index: 1;
+}
+
+/* Fixes a bug where the box shadow gets cut off */
+.v-window-item {
+  padding-bottom: 3px;
+}
+
+.markdown p:last-child {
+  margin-bottom: 0;
+}
+.markdown table {
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+.markdown table td, .markdown table th {
+  margin: 0;
+  padding: 2px 4px;
+  border: 1px solid #dee2e6;
+}
+
+.v-tooltip__content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+code::after, code::before, kbd::after, kbd::before {
+  content: none !important;
+}

@@ -1,0 +1,41 @@
+{
+  "description": "Generates and adds UUID values to a datatable column.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to which UUID values will be added."
+    },
+    {
+      "name": "target column",
+      "type": "text",
+      "description": "The name of an existing column in `data` to which UUID values will be added.\nA new column will created if it does not exist in `data`."
+    },
+    {
+      "name": "source column",
+      "type": "text",
+      "description": "The name of an existing column in `data` containing unique values.",
+      "default": null
+    },
+    {
+      "name": "short",
+      "type": "boolean",
+      "description": "Specifies whether to shorten the generated IDs.\nSee https://www.npmjs.com/package/short-uuid#details.\nDefaults to `False`.",
+      "default": false
+    },
+    {
+      "name": "overwrite",
+      "type": "boolean",
+      "description": "Specifies whether to overwrite existing values.\nDefaults to `False`.",
+      "default": false
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable with specified column added."
+    }
+  ]
+}

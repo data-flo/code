@@ -1,0 +1,24 @@
+{
+  "description": "Removes specified columns from a datatable.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to be searched."
+    },
+    {
+      "name": "columns",
+      "type": "list",
+      "description": "A list of columns in `data` to be removed.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable with the specified columns removed."
+    }
+  ]
+}

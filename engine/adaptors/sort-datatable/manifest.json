@@ -1,0 +1,23 @@
+{
+  "description": "Sorts a datatable by one or more columns",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to be sorted."
+    },
+    {
+      "name": "columns",
+      "type": "map",
+      "description": "A map of columns used for sorting.\nThe datatable will be sorted by  the 1st map item key. The value should be 'asc' or 'desc'.\nIf there is a 2nd item the dataframe will then be sorted by this"
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable sorted by the column(s) specified."
+    }
+  ]
+}

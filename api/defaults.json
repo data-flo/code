@@ -1,0 +1,18 @@
+{
+  "adaptors": {
+    "defaults": {}
+  },
+  "googleAnalyticsAccount": null,
+  "mongodb": {
+    "url": "mongodb://localhost:27017/data-flo"
+  },
+  "node": {
+    "hostname": "localhost",
+    "port": 8080,
+    "sessionSecret": "0"
+  },
+  "passport": {
+    "url": "http://localhost:8080/api",
+    "strategies": {}
+  }
+}

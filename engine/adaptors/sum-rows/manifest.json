@@ -1,0 +1,29 @@
+{
+  "description": "Sums rows in specified columns",
+  "category": "Data Manipulation",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to sum."
+    },
+    {
+      "name": "sum columns",
+      "type": "list",
+      "description": "Columns to sum."
+    },
+    {
+      "name": "group columns",
+      "type": "list",
+      "description": "Columns to group by.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable in wide format."
+    }
+  ]
+}

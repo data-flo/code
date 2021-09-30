@@ -1,0 +1,55 @@
+{
+  "description": "Converts the case of text values of a datatable column.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to be converted."
+
+    },
+    {
+      "name": "column",
+      "type": "text",
+      "description": "The name of a column in data to be converted."
+    },
+    {
+      "name": "case",
+      "type": "text",
+      "description": "One of the following supported case patterns:\n- `no`\n- `dot`\n- `swap`\n- `path`\n- `upper`\n- `lower`\n- `camel`\n- `snake`\n- `title`\n- `param`\n- `kebab`\n- `hyphen`\n- `header`\n- `pascal`\n- `constant`\n- `sentence`\n- `upperfirst`\n- `lowerfirst`",
+      "enum": [
+        "no",
+        "dot",
+        "swap",
+        "path",
+        "upper",
+        "lower",
+        "camel",
+        "snake",
+        "title",
+        "param",
+        "kebab",
+        "hyphen",
+        "header",
+        "pascal",
+        "constant",
+        "sentence",
+        "upperfirst",
+        "lowerfirst"
+      ]
+    },
+    {
+      "name": "target",
+      "type": "text",
+      "description": "The name of the column to which converted values are added.\nIf unspecified, it defaults to the value of `column`.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable with target column added."
+    }
+  ]
+}

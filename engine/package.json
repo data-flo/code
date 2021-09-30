@@ -1,0 +1,50 @@
+{
+  "name": "data-flo-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node",
+    "test": "./node_modules/.bin/tap --no-coverage-report",
+    "test-adaptors": "tap --no-coverage-report --test-ignore=\"sql-server-database|mysql-database|forward-geocoding|reverse-geocoding\""
+  },
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.4.1",
+    "axios": "^0.19.2",
+    "biojs-io-newick": "^1.5.0",
+    "change-case": "^3.1.0",
+    "cog-uk.js": "gitlab:cgps/cog-uk/cog-uk.js#v9.0.0",
+    "date-fns": "^2.0.1",
+    "dateformat": "^3.0.3",
+    "dbffile": "^0.7.6",
+    "escape-string-regexp": "^1.0.5",
+    "filehound": "^1.16.4",
+    "ftp": "^0.3.10",
+    "fuzzy-matching": "^0.4.3",
+    "googleapis": "^40.0.0",
+    "ini-config-parser": "^1.0.4",
+    "is-stream": "^1.1.0",
+    "knex": "^0.15.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mssql": "4.1.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.5.3",
+    "papaparse": "^4.6.0",
+    "request": "^2.87.0",
+    "short-uuid": "^3.1.1",
+    "springy": "^2.8.0",
+    "sqlite3": "^5.0.0",
+    "ssh2-sftp-client": "^5.1.2",
+    "stream-to-string": "^1.1.0",
+    "string-to-stream": "^1.1.1",
+    "tmp": "^0.0.33",
+    "vis": "^4.21.0",
+    "xlsx": "^0.14.3",
+    "yn": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-cgps": "gitlab:cgps/dev/eslint-config",
+    "tap": "^14.6.4"
+  }
+}

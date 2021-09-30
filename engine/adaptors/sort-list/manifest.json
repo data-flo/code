@@ -1,0 +1,24 @@
+{
+  "description": "Sorts elements in a list.",
+  "category": "List Manipulation",
+  "input": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A list to be sorted."
+    },
+    {
+      "name": "reverse",
+      "type": "boolean",
+      "default": false,
+      "description": "Specifies whether to sort the list elements in descending order. Defaults to `false`."
+    }
+  ],
+  "output": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A new list containing the sorted elements."
+    }
+  ]
+}

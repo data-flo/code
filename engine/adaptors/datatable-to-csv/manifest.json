@@ -1,0 +1,36 @@
+{
+  "description": "Converts a datatable to a CSV string.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    },
+    {
+      "name": "separator",
+      "type": "text",
+      "default": ",",
+      "description": "Character used as column delimiter. Defaults to `,`."
+    },
+    {
+      "name": "newline",
+      "type": "text",
+      "default": "\n",
+      "description": "Character used as row delimiter. Defaults to `\\n` (newline)."
+    },
+    {
+      "name": "columns",
+      "type": "list",
+      "description": "A list of columns to be included in the CSV text. Defaults to `null` (all columns).",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "csv",
+      "type": "text",
+      "description": "Text in CSV format."
+    }
+  ]
+}

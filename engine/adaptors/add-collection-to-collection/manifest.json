@@ -1,0 +1,28 @@
+{
+  "description": "Adds a collection to another collection.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "collection",
+      "type": "collection",
+      "description": "A collection to which the sub-collection will be added."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The key of the datatable in the collection."
+    },
+    {
+      "name": "sub-collection",
+      "type": "collection",
+      "description": "A collection to be added to the collection."
+    }
+  ],
+  "output": [
+    {
+      "name": "collection",
+      "type": "collection",
+      "description": "A copy of the collection with the sub-collection added."
+    }
+  ]
+}

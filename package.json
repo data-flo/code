@@ -1,0 +1,23 @@
+{
+  "name": "data-flo",
+  "version": "118.0.0",
+  "description": "Open-source, modular, and extensible data integration",
+  "author": "CGPS",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/cgps/data-flo-io.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/cgps/data-flo-io/issues"
+  },
+  "scripts": {
+    "start": "cd app && npm run dev",
+    "dev": "cd app && npm run dev",
+    "release": "npm version major && git push && git push --tags"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-config-cgps": "gitlab:cgps/dev/eslint-config"
+  }
+}

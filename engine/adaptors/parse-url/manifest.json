@@ -1,0 +1,73 @@
+{
+  "description": "Converts an URL to text.",
+  "category": "URL Manipulation",
+  "input": [
+    {
+      "name": "url",
+      "type": "url",
+      "description": "An URL to be parsed, e.g. `https://user:pass@www.example.com:8080/path/to/page?x=0&y=1#top`."
+    }
+  ],
+  "output": [
+    {
+      "name": "href",
+      "type": "text",
+      "description": "The full serialised URL, e.g. `https://user:pass@www.example.com:8080/path/to/page?x=0&y=1#top`."
+    },
+    {
+      "name": "origin",
+      "type": "text",
+      "description": "The origin of the URL, e.g. `https://www.example.com:8080`."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The protocol portion of the URL, e.g. `https:`."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": "The username portion of the URL, e.g. `user`."
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "description": "The password portion of the URL, e.g. `pass`."
+    },
+    {
+      "name": "host",
+      "type": "text",
+      "description": "The host portion of the URL, e.g. `www.example.com:8080`."
+    },
+    {
+      "name": "hostname",
+      "type": "text",
+      "description": "The host name portion of the URL, e.g. `www.example.com`."
+    },
+    {
+      "name": "port",
+      "type": "text",
+      "description": "The port portion of the URL, e.g. `8080`."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path portion of the URL, e.g. `/path/to/page`."
+    },
+    {
+      "name": "query string",
+      "type": "text",
+      "description": "The host portion of the URL, e.g. `?x=0&y=1`."
+    },
+    {
+      "name": "query values",
+      "type": "map",
+      "description": "The query portion of the URL in a map format of key to value."
+    },
+    {
+      "name": "hash",
+      "type": "text",
+      "description": "The fragment portion of the URL, e.g. `#top`."
+    }
+  ]
+}

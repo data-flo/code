@@ -1,0 +1,2 @@
+{ "data": [ { "ec5_uuid": "e6990177-7578-4e88-8fc6-bef47c9642f3", "Local Laboratory ID": "9876666", "Barcode": "PHEC-1E23DD 000", "Sample source ID": "", "Pick a region": "England", "Collection Date day": "10", "Collection Date month": "03", "Collection Date year": "2020", "County": "Cambridgeshire", "Age": "60", "Sender Location": "Addenbrokes", "Are you a sequencing laboratory?": "Yes", "Sequencing platform": "Ilumina NextSeq", "Bioinformatics": "Articv2", "Run Identifier": "120", "Diagnostic CT value": "35", "Quantification": "10", "Is cell culture?": "No" } ] }
+
