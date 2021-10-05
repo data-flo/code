@@ -1,0 +1,46 @@
+{
+  "description": "Runs an SQL query on an Oracle Database and returns the results as a datatable.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "hostname",
+      "type": "text",
+      "default": "localhost",
+      "description": "The name of the database host. Defaults to \"localhost\"."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "default": 1521,
+      "description": "The port on which the database server is running. Defaults to 1521."
+    },
+    {
+      "name": "service",
+      "type": "text",
+      "description": "The name of the service (e.g XEPDB1 for pluggable database)."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "default": "root",
+      "description": "The database server username. Defaults to \"root\"."
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "description": "The database server password."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "An valid SQL query."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}
