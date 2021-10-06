@@ -3,21 +3,9 @@
   "category": "Data Sources",
   "input": [
     {
-      "name": "hostname",
+      "name": "connectionString",
       "type": "text",
-      "default": "localhost",
-      "description": "The name of the database host. Defaults to \"localhost\"."
-    },
-    {
-      "name": "port",
-      "type": "integer",
-      "default": 1521,
-      "description": "The port on which the database server is running. Defaults to 1521."
-    },
-    {
-      "name": "service",
-      "type": "text",
-      "description": "The name of the service (e.g XEPDB1 for pluggable database)."
+      "description": "An Easy Connect string (e.g. hostname:port/service), a Connect Descriptor string, or the SID of a local Oracle Database instance. Defaults to `localhost:1521/XEPDB1`."
     },
     {
       "name": "username",
