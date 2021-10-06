@@ -22,7 +22,7 @@ module.exports = async function (args) {
     connection: {
       user: args.username,
       password: args.password,
-      connectString: `${args.hostname}:${args.port}/${args.service}`,
+      connectString: args.connectionString,
     },
   });
   if (!validQuery.test(args.query)) {
