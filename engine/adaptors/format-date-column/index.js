@@ -13,7 +13,7 @@ module.exports = function (args) {
   const options = { locale: locale[args.locale.replace("-", "")] };
 
   data.addColumn(
-    args["target column"],
+    args["target column"] || args["source column"],
     (row) => {
       const rawValue = row[args["source column"]];
       if (rawValue) {
