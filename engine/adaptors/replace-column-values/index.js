@@ -11,7 +11,7 @@ module.exports = function (args) {
     args.target || args.source,
     (row) => {
       const sourceValue = row[args.source];
-      if (sourceValue) {
+      if (sourceValue || sourceValue === "") {
         if (typeof (sourceValue) === "number") {
           const targetValue = sourceValue.toString().replace(pattern, args.replacement);
           // convert back to a number if possible
