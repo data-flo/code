@@ -101,7 +101,7 @@
             />
           </v-list-tile-action>
           <v-list-tile-content v-on:click="accessMode = 'public'">
-            <v-list-tile-title>Public on the web</v-list-tile-title>
+            <v-list-tile-title>Public on this site</v-list-tile-title>
             <v-list-tile-sub-title>Anyone on can find this and access it.</v-list-tile-sub-title>
           </v-list-tile-content>
         </v-list-tile>
