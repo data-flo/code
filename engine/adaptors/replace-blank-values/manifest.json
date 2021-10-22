@@ -20,7 +20,7 @@
   ],
   "output": [
     {
-      "name": "blanks",
+      "name": "data",
       "type": "datatable",
       "description": "A new datatable with the blank values replaced."
     }
