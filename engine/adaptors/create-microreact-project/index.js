@@ -1,6 +1,6 @@
 const createMicroreactDocument = require("microreact.js");
 
-module.exports = async function uploadToMicroreact(args, context) {
+module.exports = async function createMicroreactProject(args, context) {
   const match = args.api.match(/(.*)\/api/i);
 
   if (!match) {
@@ -9,16 +9,17 @@ module.exports = async function uploadToMicroreact(args, context) {
 
   const request = await createMicroreactDocument({
     name: args.name,
+    description: args.description,
 
     data: args.data,
     tree: args.tree,
     network: args.network,
 
     settings: {
-      id: args.idField,
-      timeline_field: args.timelineField,
-      map_latitude: args.mapLatitude,
-      map_longitude: args.mapLongitude,
+      id: args["id column"],
+      timeline_field: args["timeline column"],
+      map_latitude: args["latitude column"],
+      map_longitude: args["longitude column"],
     },
   });
 
@@ -27,10 +28,6 @@ module.exports = async function uploadToMicroreact(args, context) {
     request,
     { "access-token": args["access token"] },
   );
-
-  if (Array.isArray(response)) {
-    throw new Error(JSON.stringify(response));
-  }
 
   return {
     id: response.id,

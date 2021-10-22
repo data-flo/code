@@ -27,6 +27,7 @@
     "is-stream": "^1.1.0",
     "knex": "^0.15.1",
     "lodash": "^4.17.15",
+    "microreact.js": "gitlab:cgps/data-flo/microreact.js",
     "moment": "^2.24.0",
     "mssql": "4.1.0",
     "mysql": "^2.16.0",

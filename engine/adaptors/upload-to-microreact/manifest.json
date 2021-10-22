@@ -29,13 +29,12 @@
       "name": "api",
       "type": "text",
       "default": "https://microreact.org/api",
-      "description": "The url of the microreact api. Defaults to https://microreact.org/api."
+      "description": "The url of the microreact api.\nDefaults to `https://microreact.org/api`."
     },
     {
       "name": "access token",
       "type": "text",
-      "default": null,
-      "description": "An optional API access token."
+      "description": "An API access token.\nSee https://docs.microreact.org/api/access-tokens."
     },
     {
       "name": "idField",

@@ -150,6 +150,9 @@ export const getters = {
       if (item.type === "dataflow" && item.id === rootState.editor.id) {
         continue;
       }
+      if (item.type === "adaptor" && item.id === "upload-to-microreact") {
+        continue;
+      }
       if (!(item.category in groups)) {
         groups[item.category] = [];
       }
