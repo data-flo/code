@@ -30,14 +30,14 @@
         </v-icon>
       </v-btn>
 
-      <v-btn
+      <!-- <v-btn
         v-bind:disabled="!selectionRemovable"
         flat
         title="Delete selection"
         v-on:click="onRemoveSelection"
       >
         <v-icon>mdi-delete</v-icon>
-      </v-btn>
+      </v-btn> -->
 
       <!--
       <v-tooltip bottom>
