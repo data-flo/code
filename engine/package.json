@@ -30,6 +30,7 @@
     "microreact.js": "gitlab:cgps/data-flo/microreact.js",
     "moment": "^2.24.0",
     "mssql": "4.1.0",
+    "mustache": "^4.2.0",
     "mysql": "^2.16.0",
     "mysql2": "^1.5.3",
     "oracledb": "^5.2.0",
