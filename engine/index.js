@@ -57,8 +57,8 @@ class Engine {
       for (const [key, value] of Object.entries(this.options.defaults[name])) {
         const input = manifest.input.find((x) => x.name === key);
         if (typeof input !== "undefined") {
-          if (typeof input.default !== "undefined") {
-            input.description = input.description.replace(input.default, value);
+          if (typeof input.default !== "undefined" && input.default !== "") {
+            input.description = input.description.replace(`\`${input.default}\``, value);
           }
           input.default = value;
         } else {
