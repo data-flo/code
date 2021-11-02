@@ -42,7 +42,7 @@
     "string-to-stream": "^1.1.1",
     "tmp": "^0.0.33",
     "vis": "^4.21.0",
-    "xlsx": "^0.14.3",
+    "xlsx": "^0.17.3",
     "yn": "^3.1.0"
   },
   "devDependencies": {

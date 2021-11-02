@@ -2,7 +2,10 @@ const XLSX = require("xlsx");
 
 module.exports = async function (args, context) {
   const filePath = await context.utils.file.path(args.file);
-  const workbook = XLSX.readFile(filePath);
+  const workbook = XLSX.readFile(
+    filePath, {
+      raw: true,
+    });
   if (args.sheet && !workbook.SheetNames.includes(args.sheet)) {
     throw new Error(`Workbook does not include a sheet named '${args.sheet}'`);
   }
