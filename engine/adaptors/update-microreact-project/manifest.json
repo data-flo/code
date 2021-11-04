@@ -22,6 +22,7 @@
     {
       "name": "data",
       "type": "text",
+      "default": "",
       "description": "Data in CSV format or a URL linking to a CSV file."
     },
     {
