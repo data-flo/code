@@ -8,4 +8,4 @@ schema.statics.findOneOrCreate = require("./findOneOrCreate");
 
 schema.statics.findByAccessToken = require("./find-by-access-token");
 
-module.exports = mongoose.model("User", schema);
+module.exports = mongoose.models.User || mongoose.model("User", schema);
