@@ -23,8 +23,9 @@ module.exports = async function createMicroreactProject(args, context) {
     },
   });
 
+  const api = args.api.endsWith("/") ? args.api.substr(0, args.api.length - 1) : args.api;
   const response = await context.request.postJson(
-    `${args.api}projects/create`,
+    `${api}/projects/create`,
     request,
     { "access-token": args["access token"].trim() },
   );
