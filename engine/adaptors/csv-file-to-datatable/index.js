@@ -2,6 +2,7 @@ const toString = require("stream-to-string");
 
 module.exports = async function (args, context) {
   const data = await toString(args.csv, args.encoding);
+
   const rows = context.utils.data.parseCsv(
     data,
     {
@@ -9,6 +10,7 @@ module.exports = async function (args, context) {
       newline: args.newline,
     }
   );
+
   return {
     data: {
       rows,

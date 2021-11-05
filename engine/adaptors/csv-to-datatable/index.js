@@ -1,6 +1,16 @@
 module.exports = function (args) {
-  const data = args.csv;
+  const rows = context.utils.data.parseCsv(
+    args.csv,
+    {
+      delimiter: args.separator,
+      newline: args.newline,
+    }
+  );
+
   return {
-    data,
+    data: {
+      rows,
+      columns: rows.fields,
+    },
   };
 };

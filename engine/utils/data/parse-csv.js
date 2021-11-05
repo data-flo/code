@@ -10,7 +10,7 @@ module.exports = function (csv, options) {
   const results = papaparse.parse(
     csv,
     {
-      delimiter,
+      delimiter: (delimiter === "\\t") ? "\t" : delimiter,
       newline,
       header: headers,
       dynamicTyping: false,
