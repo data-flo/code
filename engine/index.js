@@ -1,11 +1,14 @@
 const path = require("path");
 const Filehound = require("filehound");
+const globalTunnel = require("global-tunnel-ng");
 
 const runAdaptor = require("./runner/run-adaptor");
 const runDataflow = require("./runner/run-dataflow");
 const request = require("./utils/request");
 const cache = require("./utils/cache");
 const utils = require("./utils");
+
+globalTunnel.initialize();
 
 const defaultConfig = {
   adaptors: "./adaptors",
