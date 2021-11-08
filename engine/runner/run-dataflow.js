@@ -171,6 +171,7 @@ module.exports = async function (manifest, rawValues, options = {}, context) {
         }
       }
       catch (error) {
+        console.error(error);
         step.error = error.message || error;
         step.status = "error";
 
