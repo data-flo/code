@@ -1,4 +1,4 @@
-module.exports = function (args) {
+module.exports = function (args, context) {
   const rows = context.utils.data.parseCsv(
     args.csv,
     {
