@@ -1,0 +1,23 @@
+{
+  "description": "Writes a datatable to a SQLite DB file.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "sqlite",
+      "type": "file",
+      "description": "The SQLite DB file to which the data to will exported."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "The query to be passed to the database."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}
