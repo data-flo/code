@@ -35,6 +35,7 @@
     "mysql": "^2.16.0",
     "mysql2": "^1.5.3",
     "nodemailer": "^6.7.0",
+    "odbc": "^2.4.1",
     "oracledb": "^5.2.0",
     "papaparse": "^4.6.0",
     "request": "^2.87.0",
