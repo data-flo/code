@@ -10,6 +10,8 @@ const formData = require("express-form-data");
 const os = require("os");
 
 const userAccounts = require("cgps-user-accounts/src");
+const logger = require("cgps-application-server/logger");
+
 const userStore = require("./utils/user-store");
 
 const config = require("./utils/config");
@@ -79,7 +81,6 @@ if (process.env.npm_lifecycle_script !== "nuxt build") {
   );
 }
 
-
 // configure user accounts
 userAccounts(app, {
   userStore,
@@ -91,6 +92,14 @@ userAccounts(app, {
   logoutPath: "/auth/signout",
   strategies: config.passport.strategies,
   redirectToReferrer: false,
+  onLogin(req, res) {
+    logger.info("user signin", {}, { user: req.user, req, res });
+    return Promise.resolve();
+  },
+  onLogout(req, res) {
+    logger.info("user signout", {}, { user: req.user, req, res });
+    return Promise.resolve();
+  },
 });
 
 app.use(accessTokenMiddleware);

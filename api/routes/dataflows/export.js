@@ -1,4 +1,5 @@
 const slugify = require("slugify");
+const logger = require("cgps-application-server/logger");
 
 const DataflowModel = require("../../models/dataflow");
 
@@ -72,6 +73,7 @@ module.exports = function (req, res, next) {
         "Content-Type",
         "application/json; charset=utf-8"
       );
+      logger.info("dataflow exported", { dataflow: req.dataflow.identifier }, { req, res });
       res
         .status(200)
         .send(

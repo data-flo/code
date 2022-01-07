@@ -1,4 +1,5 @@
 const fs = require("fs");
+const logger = require("cgps-application-server/logger");
 
 const DataflowModel = require("../../models/dataflow");
 const { StatusCodeError } = require("../../errors");
@@ -68,6 +69,9 @@ module.exports = function (req, res, next) {
     .then(getDocs)
     .then(checkDocs)
     .then((doc) => importDocs(doc, req.user ? req.user : false))
-    .then((doc) => res.json({ id: doc.identifier }))
+    .then((doc) => {
+      logger.info("dataflow imported", { dataflow: doc.identifier }, { req, res });
+      res.json({ id: doc.identifier });
+    })
     .catch(next);
 };

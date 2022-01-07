@@ -1,3 +1,4 @@
+const logger = require("cgps-application-server/logger");
 
 module.exports = function (req, res, next) {
   req.dataflow.access = req.body.access;
@@ -12,6 +13,7 @@ module.exports = function (req, res, next) {
   req.dataflow.save()
     .then((doc) => {
       if (doc.ok === 1 && doc.nModified === 1) {
+        logger.info("dataflow updated", { dataflow: req.dataflow.identifier }, { req, res });
         return true;
       } else {
         return false;

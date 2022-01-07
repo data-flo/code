@@ -1,4 +1,5 @@
 const DataflowModel = require("../../models/dataflow");
+const logger = require("cgps-application-server/logger");
 
 module.exports = function (req, res, next) {
   DataflowModel.create({
@@ -9,6 +10,9 @@ module.exports = function (req, res, next) {
     },
     user: req.user ? req.user : false,
   })
-    .then((doc) => res.json({ id: doc.identifier }))
+    .then((doc) => {
+      logger.info("dataflow created", { dataflow: doc.identifier }, { req, res });
+      res.json({ id: doc.identifier });
+    })
     .catch(next);
 };

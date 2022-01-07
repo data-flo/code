@@ -161,10 +161,12 @@ module.exports = function (req, res) {
     })
     .then((output) => {
       if (output) {
+        logger.info("dataflow run", { dataflow: req.dataflow.identifier, status: "success" }, { req, res });
         res.json(output);
       }
     })
     .catch((error) => {
+      logger.info("dataflow run", { dataflow: req.dataflow.identifier, status: "failed", error: error?.message || error }, { req, res });
       res.status(500);
       if (error instanceof Error) {
         res.json({ error: error.message });
