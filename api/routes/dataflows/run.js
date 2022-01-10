@@ -2,6 +2,7 @@
 
 const yn = require("yn");
 const isStream = require("is-stream");
+const logger = require("cgps-application-server/logger");
 
 const DataflowModel = require("../../models/dataflow");
 const engine = require("../../utils/engine");
