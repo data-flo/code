@@ -10,7 +10,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cgps-application-server": "gitlab:cgps/dev/application-server#v14.0.0",
-    "cgps-user-accounts": "gitlab:cgps/dev/user-accounts#84ed971",
+    "cgps-user-accounts": "gitlab:cgps/dev/user-accounts#9666737",
     "connect-mongo": "^3.2.0",
     "console-stamp": "^0.2.6",
     "cookie-parser": "^1.4.3",
