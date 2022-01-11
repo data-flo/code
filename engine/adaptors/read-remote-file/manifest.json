@@ -1,5 +1,5 @@
 {
-  "description": "Retrieves a remote file from a network server.",
+  "description": "Retrieves a remote file from a remote network server.",
   "category": "Data Sources",
   "input": [
     {
