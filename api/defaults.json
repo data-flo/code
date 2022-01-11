@@ -1,6 +1,7 @@
 {
   "adaptors": {
-    "defaults": {}
+    "defaults": {},
+    "fsMappings": {}
   },
   "googleAnalyticsAccount": null,
   "mongodb": {
