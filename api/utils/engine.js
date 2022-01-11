@@ -8,6 +8,7 @@ module.exports = (req) => {
     getDataflowManifest: (...args) => DataflowModel.getManifest(...args, req.user),
     cache: mongodbCache,
     defaults: config.adaptors.defaults,
+    fsMappings: config.adaptors.fsMappings,
   });
   return engine;
 };

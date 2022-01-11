@@ -1,0 +1,29 @@
+{
+  "description": "Stores a file to a remote network server.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "address",
+      "type": "text",
+      "description": "The the full address of file on the network.\nTakes the form of `\\\\server\\path\\file.txt` or `//server/path/file.text` where server is either a host name or an IP address."
+    },
+    {
+      "name": "file",
+      "type": "file",
+      "description": "The file to be written."
+    },
+    {
+      "name": "encoding",
+      "type": "text",
+      "default": null,
+      "description": "Input file encoding. Supported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1`."
+    }
+  ],
+  "output": [
+    {
+      "name": "file",
+      "type": "file",
+      "description": "The written file."
+    }
+  ]
+}

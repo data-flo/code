@@ -13,6 +13,7 @@ globalTunnel.initialize();
 const defaultConfig = {
   adaptors: "./adaptors",
   defaults: {},
+  fsMappings: {},
 };
 
 class Engine {
@@ -21,6 +22,7 @@ class Engine {
     this.request = config.request || request;
     this.cache = config.cache || cache;
     this.utils = utils;
+    this.utils.file.map = require("./utils/file/map").bind(this, this.options.fsMappings);
 
     this.getDataflowManifest = this.getDataflowManifest.bind(this);
   }
