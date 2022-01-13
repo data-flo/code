@@ -6,7 +6,12 @@
       </template>
     </page-title>
     <v-container>
+
       <div class="text-xs-center">
+        <div v-if="errorMessage">
+           {{ errorMessage }}
+        </div>
+
         <p>
           <a
             v-for="strategy in strategies"
@@ -48,6 +53,16 @@ export default {
         twitter: "mdi-twitter",
         ldap: "mdi-key",
       };
+    },
+    errorMessage() {
+      if (this.$route && this.$route.query && this.$route.query.message) {
+        if (this.$route.query.message === "Error: Access Denied") {
+          return "Access Denied. You do not have permission to sign in."
+        }
+        else {
+          return this.$route.query.message;
+        }
+      }
     },
   },
 };
