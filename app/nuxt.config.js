@@ -136,6 +136,10 @@ module.exports = {
     },
   },
 
+  // server: {
+  //   port: 8082, // default: 3000
+  // },
+
   /*
   ** Nuxt.js router configuration (vue-router).
   ** See https://router.vuejs.org/
