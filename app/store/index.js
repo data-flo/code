@@ -51,9 +51,13 @@ export const actions = {
       );
     }
     if (req.config.passport.strategies) {
+      const strategies = [];
+      for (const [ key, value ] of Object.entries(req.config.passport.strategies)) {
+        strategies.push([ key, value.name || key ]);
+      }
       commit(
         "setStrategies",
-        Object.keys(req.config.passport.strategies)
+        strategies,
       );
     }
   },
