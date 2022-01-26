@@ -14,14 +14,14 @@
 
         <p>
           <a
-            v-for="strategy in strategies"
-            v-bind:key="strategy"
-            v-bind:href="`auth/${strategy}`"
+            v-for="[ strategyId, strategyLabel ] in strategies"
+            v-bind:key="strategyId"
+            v-bind:href="`auth/${strategyId}`"
             class="v-btn v-btn--large v-btn--outline v-btn--depressed primary--text"
             color="primary"
           >
-            <v-icon left>{{ icons[strategy] }}</v-icon>
-            Continue with {{ strategy }}
+            <v-icon left>{{ icons[strategyId] }}</v-icon>
+            Continue with {{ strategyLabel }}
           </a>
         </p>
       </div>
