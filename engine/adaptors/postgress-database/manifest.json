@@ -1,0 +1,46 @@
+{
+  "description": "retreives data from a PostgreSQL database.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "hostname",
+      "type": "text",
+      "default": "localhost",
+      "description": "The name of the database host. Defaults to `localhost`."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "default": 5432,
+      "description": "The port the database is exposed on. Defaults to `5432`."
+    },
+    {
+      "name": "database",
+      "type": "text",
+      "description": "The name of the database."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "default": "root",
+      "description": "The login username. Defaults to `postgres`."
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "description": "The login password."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "The query to be passed to the database."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}
