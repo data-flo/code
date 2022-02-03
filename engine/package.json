@@ -13,6 +13,7 @@
     "@marsaud/smb2": "^0.18.0",
     "axios": "^0.19.2",
     "biojs-io-newick": "^1.5.0",
+    "cgps-application-server": "gitlab:cgps/dev/application-server#v18.0.0",
     "change-case": "^3.1.0",
     "cog-uk.js": "gitlab:cgps/cog-uk/cog-uk.js#v9.0.0",
     "date-fns": "^2.0.1",
