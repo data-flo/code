@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.4.1",
-    "@marsaud/smb2": "^0.18.0",
+    "@marsaud/smb2": "gitlab:cgps/dev/marsaud-smb2",
     "axios": "^0.19.2",
     "biojs-io-newick": "^1.5.0",
     "cgps-application-server": "gitlab:cgps/dev/application-server#v18.0.0",
@@ -20,6 +20,7 @@
     "dateformat": "^3.0.3",
     "dbffile": "^0.7.6",
     "escape-string-regexp": "^1.0.5",
+    "fast-csv": "^4.3.6",
     "filehound": "^1.16.4",
     "ftp": "^0.3.10",
     "fuzzy-matching": "^0.4.3",
