@@ -11,13 +11,13 @@
       "name": "columns",
       "type": "list",
       "default": null,
-      "description": ""
+      "description": "The columns to be selected from those generated from the JSON object keys and used in the resulting datatable.\n\nBy default all columns will be used."
     },
     {
       "name": "path",
       "type": "text",
       "default": "",
-      "description": ""
+      "description": "A path in the JSON file that will return a array of objects with identical keys that will become the columns in the resulting datatable. The object values will be the values that populate the rows of the datatable.\n\nFor an example of a path and an acceptable array see this [snippet](https://gitlab.com/cgps/data-flo/data-flo-io/-/snippets/2249958)."
     }
   ],
   "output": [

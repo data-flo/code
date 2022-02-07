@@ -1,0 +1,18 @@
+{
+  "description": "Creates JSON text from YAML text.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "yaml",
+      "type": "text",
+      "description": "Text containing a YAML document."
+    }
+  ],
+  "output": [
+    {
+      "name": "json",
+      "type": "text",
+      "description": "A JSON document derived from the YAML input."
+    }
+  ]
+}
