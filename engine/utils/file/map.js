@@ -10,7 +10,7 @@ module.exports = function (fsMappings, filePath) {
     const targetMapping = fsMappings[sourceMapping];
     logger.debug("\t", { normalisedFilePathStartsWithSourceMapping: normalisedFilePath.startsWith(sourceMapping.toLowerCase()), sourceMapping, targetMapping, sourceMappingLowerCase: sourceMapping.toLowerCase() })
     if (normalisedFilePath.startsWith(sourceMapping.toLowerCase())) {
-      const resolvedPath = path.resolve(targetMapping, filePath.substr(sourceMapping.length).replace(/\\/g, "/"))
+      const resolvedPath = path.join(targetMapping, filePath.substr(sourceMapping.length).replace(/\\/g, "/"))
       logger.debug("\t", { resolvedPath, resolvedPathStartsWithTargetMapping: resolvedPath.startsWith(targetMapping) })
       if (resolvedPath.startsWith(targetMapping)) {
         return resolvedPath;
