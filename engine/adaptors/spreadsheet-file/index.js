@@ -6,10 +6,10 @@ module.exports = async function (args, context) {
     filePath, {
       raw: true,
     });
-  if (args.sheet && !workbook.SheetNames.includes(args.sheet)) {
-    throw new Error(`Workbook does not include a sheet named '${args.sheet}'`);
+  if (args.sheetname && !workbook.SheetNames.includes(args.sheetname)) {
+    throw new Error(`Workbook does not include a sheet named '${args.sheetname}'`);
   }
-  const worksheet = workbook.Sheets[args.sheet || workbook.SheetNames[0]];
+  const worksheet = workbook.Sheets[args.sheetname || workbook.SheetNames[0]];
   const range = (Number.parseInt(args.range, 10) - 1) || args.range || undefined;
   const rows = XLSX.utils.sheet_to_json(
     worksheet,
