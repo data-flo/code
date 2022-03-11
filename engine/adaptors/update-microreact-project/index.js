@@ -43,6 +43,9 @@ module.exports = async function createMicroreactProject(args, context) {
     network: args.network,
   });
 
+  oldDocument.meta.name = newDocument.meta.name ?? oldDocument.meta.name;
+  oldDocument.meta.description = newDocument.meta.description ?? oldDocument.meta.description;
+
   if (args.data) {
     const dataFileId = findFile(
       oldDocument.files,
