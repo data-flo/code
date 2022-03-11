@@ -35,10 +35,18 @@ module.exports = async function createMicroreactProject(args, context) {
     { "access-token": args["access token"] },
   );
 
+  const dataFileId = findFile(
+    oldDocument.files,
+    [
+      "text/csv",
+      "application/x-speadsheet",
+    ],
+  );
+
   const newDocument = await createMicroreactDocument({
     name: args.name,
     description: args.description,
-    data: args.data,
+    data: args.data ?? dataFileId.url,
     tree: args.tree,
     network: args.network,
   });
@@ -47,13 +55,6 @@ module.exports = async function createMicroreactProject(args, context) {
   oldDocument.meta.description = newDocument.meta.description ?? oldDocument.meta.description;
 
   if (args.data) {
-    const dataFileId = findFile(
-      oldDocument.files,
-      [
-        "text/csv",
-        "application/x-speadsheet",
-      ],
-    );
     if (dataFileId) {
       oldDocument.files[dataFileId] = newDocument.files["data-file-1"];
     }
