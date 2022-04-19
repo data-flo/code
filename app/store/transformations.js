@@ -146,11 +146,15 @@ export const getters = {
   },
   transformationGroups(state, getters, rootState) {
     const groups = {};
+    const deprecatedAdaptors = [
+      "upload-to-microreact",
+      "discard-columns",
+    ];
     for (const item of state.manifests) {
       if (item.type === "dataflow" && item.id === rootState.editor.id) {
         continue;
       }
-      if (item.type === "adaptor" && item.id === "upload-to-microreact") {
+      if (item.type === "adaptor" && deprecatedAdaptors.includes(item.id)) {
         continue;
       }
       if (!(item.category in groups)) {
