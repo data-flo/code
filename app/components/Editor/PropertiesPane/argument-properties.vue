@@ -100,7 +100,7 @@
               value: markAsOutput,
             }"
             hide-details
-            label="Mark as a Dataflo output"
+            label="Mark as a Dataflow output"
           />
         </v-layout>
       </section>
