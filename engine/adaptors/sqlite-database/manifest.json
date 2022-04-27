@@ -1,11 +1,11 @@
 {
-  "description": "Writes a datatable to a SQLite DB file.",
+  "description": "Reads a datatable from a SQLite DB file.",
   "category": "Data Destinations",
   "input": [
     {
       "name": "sqlite",
       "type": "file",
-      "description": "The SQLite DB file to which the data to will exported."
+      "description": "The SQLite DB file from which the data will be imported."
     },
     {
       "name": "query",
