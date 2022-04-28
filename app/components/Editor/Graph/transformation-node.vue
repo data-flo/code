@@ -63,7 +63,7 @@
       v-for="(socket) in nodeSockets"
       v-bind:key="socket.id"
       v-bind:kind="socket.kind"
-      v-bind:label="socket.data.argument"
+      v-bind:label="socket.data.required ? '*' + socket.data.argument : socket.data.argument"
       v-bind:socket-id="socket.id"
       v-bind:socket-type="socket.type"
       v-bind:status="socket.status"

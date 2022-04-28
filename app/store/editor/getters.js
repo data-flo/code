@@ -35,6 +35,7 @@ export default {
           data: {
             transformation: node.name,
             argument: argument.name,
+            required: (argument.default === undefined),
             direction: "in",
           },
         });
