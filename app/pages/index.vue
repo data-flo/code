@@ -308,6 +308,8 @@
         </div>
       </div>
     </section>
+
+    <script defer data-domain="data-flo.io" src="https://analytics.cgps.dev/js/plausible.js"></script>
   </div>
 </template>
 
