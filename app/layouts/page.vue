@@ -67,6 +67,8 @@
         </v-layout>
       </v-container>
     </v-content>
+
+    <script defer data-domain="data-flo.io" src="https://analytics.cgps.dev/js/plausible.js"></script>
   </v-app>
 </template>
 
