@@ -7,7 +7,7 @@ module.exports = function createDatatable(args) {
       data: args.data.rows,
     },
     {
-      delimiter: args.separator,
+      delimiter: (args.separator === "\\t") ? "\t" : args.separator,
       newline: args.newline,
     }
   );
