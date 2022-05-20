@@ -172,7 +172,7 @@
             class="ui image"
           >
         </a>
-        <a
+        <!-- <a
           title="Centers for Disease Control and Prevention"
           target="_blank"
           rel="noopener noreferrer"
@@ -184,7 +184,7 @@
             src="~/static/images/cdc-logo.png"
             class="ui image"
           >
-        </a>
+        </a> -->
         <a
           title="NIHR Global Health Research Unit: Genomic Surveillance of Antimicrobial Resistance"
           target="_blank"
