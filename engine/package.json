@@ -4,18 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node",
-    "test": "./node_modules/.bin/tap --no-coverage-report",
-    "test-adaptors": "tap --no-coverage-report --test-ignore=\"sql-server-database|mysql-database|forward-geocoding|reverse-geocoding\""
   },
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.4.1",
-    "@marsaud/smb2": "gitlab:cgps/dev/marsaud-smb2",
+    "@marsaud/smb2": "cgps-dev/marsaud-smb2",
     "axios": "^0.19.2",
     "biojs-io-newick": "^1.5.0",
-    "cgps-application-server": "gitlab:cgps/dev/application-server#v18.0.0",
+    "cgps-application-server": "cgps-dev/application-server#v18.0.0",
     "change-case": "^3.1.0",
-    "cog-uk.js": "gitlab:cgps/cog-uk/cog-uk.js#v9.0.0",
     "date-fns": "^2.0.1",
     "dateformat": "^3.0.3",
     "dbffile": "^0.7.6",
@@ -31,7 +27,7 @@
     "js-yaml": "^4.1.0",
     "knex": "^0.15.1",
     "lodash": "^4.17.15",
-    "microreact.js": "gitlab:cgps/data-flo/microreact.js",
+    "microreact.js": "data-flo/microreact.js",
     "moment": "^2.24.0",
     "mssql": "4.1.0",
     "mustache": "^4.2.0",
@@ -55,7 +51,7 @@
     "yn": "^3.1.0"
   },
   "devDependencies": {
-    "eslint-config-cgps": "gitlab:cgps/dev/eslint-config",
+    "eslint-config-cgps": "cgps-dev/eslint-config",
     "tap": "^14.6.4"
   }
 }

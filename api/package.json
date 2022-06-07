@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "cgps-application-server": "gitlab:cgps/dev/application-server#v18.0.0",
-    "cgps-user-accounts": "gitlab:cgps/dev/user-accounts#11b4346",
+    "cgps-application-server": "cgps-dev/application-server#v18.0.0",
+    "cgps-user-accounts": "cgps-dev/user-accounts#dataflo",
     "connect-mongo": "^3.2.0",
     "console-stamp": "^0.2.6",
     "cookie-parser": "^1.4.3",
@@ -29,6 +29,6 @@
     "yn": "^3.1.0"
   },
   "devDependencies": {
-    "eslint-config-cgps": "gitlab:cgps/dev/eslint-config"
+    "eslint-config-cgps": "cgps-dev/eslint-config"
   }
 }

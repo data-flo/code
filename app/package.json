@@ -38,7 +38,7 @@
     "cross-env": "^5.2.0",
     "data-flo-api": "file:../api",
     "data-flo-engine": "file:../engine",
-    "eslint-config-cgps": "gitlab:cgps/dev/eslint-config",
+    "eslint-config-cgps": "cgps-dev/eslint-config",
     "eslint-import-resolver-nuxt": "^0.1.0",
     "eslint-loader": "^2.0.0"
   },

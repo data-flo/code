@@ -138,14 +138,14 @@
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://gitlab.com/cgps/data-flo-io/blob/master/LICENSE"
+                  href="https://github.com/data-flo/code/blob/main/LICENSE"
                 > MIT License</a>
                 on
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://gitlab.com/cgps/data-flo-io"
-                > GitLab</a>.
+                  href="https://github.com/data-flo/code"
+                > GitHub</a>.
               </p>
             </v-flex>
           </v-layout>

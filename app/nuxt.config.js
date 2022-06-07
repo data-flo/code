@@ -15,7 +15,7 @@ module.exports = {
    ** Environment variables
    */
   env: {
-    version: require("../package.json").version.split(".")[0],
+    version: (process.env.version || "").split(".")[0],
   },
 
   /*
