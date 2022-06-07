@@ -1,0 +1,34 @@
+{
+  "description": "Creates an URL from a protocol, hostname, port, and pathname.",
+  "category": "URL Manipulation",
+  "input": [
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The protocol used to reach the target, e.g. http or https."
+    },
+    {
+      "name": "hostname",
+      "type": "text",
+      "description": "The domain or ip of the target."
+    },
+    {
+      "name": "port",
+      "type": "text",
+      "default": "",
+      "description": "The port the host is exposing. Defaults to \"\"."
+    },
+    {
+      "name": "pathname",
+      "type": "text",
+      "default": "",
+      "description": "The pathname to the resource of the target. Defaults to \"\"."
+    }
+  ],
+  "output": [
+    {
+      "name": "url",
+      "type": "url"
+    }
+  ]
+}

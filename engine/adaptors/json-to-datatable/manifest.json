@@ -1,0 +1,30 @@
+{
+  "description": "Creates a datatable from JSON text.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "json",
+      "type": "text",
+      "description": "A text containing a JSON document."
+    },
+    {
+      "name": "columns",
+      "type": "list",
+      "default": null,
+      "description": "The columns to be selected from those generated from the JSON object keys and used in the resulting datatable.\n\nBy default all columns will be used."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "default": "",
+      "description": "A path in the JSON file that will return a array of objects with identical keys that will become the columns in the resulting datatable. The object values will be the values that populate the rows of the datatable.\n\nFor an example of a path and an acceptable array see this [snippet](https://gitlab.com/cgps/data-flo/data-flo-io/-/snippets/2249958)."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "description": "Loads data from a WHONET lab configuration file.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "lab",
+      "type": "text",
+      "description": "A WHONET lab configuration file."
+    }
+  ],
+  "output": [
+    {
+      "name": "laboratoryName",
+      "type": "text"
+    },
+    {
+      "name": "laboratoryType",
+      "type": "text"
+    },
+    {
+      "name": "wards",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "institutions",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "departments",
+      "type": "datatable",
+      "description": "A datatable containing `code` and `name` columns."
+    },
+    {
+      "name": "antibiotics",
+      "type": "datatable",
+      "description": "A datatable containing `code`, `name`, `test` columns."
+    }
+  ]
+}

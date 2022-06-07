@@ -1,0 +1,18 @@
+{
+  "description": "Imports a card summary file produced by ARIBA (https://github.com/sanger-pathogens/ariba).",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "file",
+      "type": "file",
+      "description": "A .csv summary file produced by ARIBA."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable containing the following columns: `sample`, `gene`, `match`, `assembled`, `reference sequence`, `percent identity`, and `contig cov`. Refer to  https://github.com/sanger-pathogens/ariba/wiki/Task%3A-summary#tuning-the-output for detailed desciption of fields."
+    }
+  ]
+}

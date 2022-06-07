@@ -1,0 +1,48 @@
+{
+  "description": "Connect to and query a MySQL database and convert the result to a datatable; SELECT statements only.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "connection string",
+      "type": "text",
+      "default": "localhost",
+      "description": "The connection string to connect to the database, e.g. `DSN=MYDSN`"
+    },
+    {
+      "name": "connection timeout",
+      "type": "integer",
+      "default": 30,
+      "description": "The number of seconds to wait for a request on the connection to complete before returning to the application.\nDefaults to 30."
+    },
+    {
+      "name": "login timeout",
+      "type": "integer",
+      "default": 30,
+      "description": "The number of seconds to wait for a login request to complete before returning to the application.\nDefaults to 30."
+    },
+    {
+      "name": "query timeout",
+      "type": "integer",
+      "default": 30,
+      "description": "The number of seconds that the query will attempt to execute before returning to the application.\nDefaults to 30."
+    },
+    {
+      "name": "sql query",
+      "type": "text",
+      "description": "The SQL string to execute."
+    },
+    {
+      "name": "parameters",
+      "type": "list",
+      "description": "A list of values to bind to the parameter markers, if there are any. The number of values in this array must match the number of parameter markers in the sql statement.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}

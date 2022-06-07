@@ -1,0 +1,28 @@
+{
+  "description": "Saves a list of files to a folder in Google Drive.\nThe folder should be shared to with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "files",
+      "type": "list",
+      "description": "A list composed of file contents with one record per file."
+    },
+    {
+      "name": "folder",
+      "type": "url",
+      "description": "The URL of the folder on Google Drive."
+    }
+  ],
+  "output": [
+    {
+      "name": "urls",
+      "type": "list",
+      "description": "A list of Google Drive URLs of the created file."
+    },
+    {
+      "name": "ids",
+      "type": "list",
+      "description": "The ID of the created file."
+    }
+  ]
+}

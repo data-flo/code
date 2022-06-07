@@ -1,0 +1,23 @@
+{
+  "description": "Merges two lists into one.",
+  "category": "List Manipulation",
+  "input": [
+    {
+      "name": "first",
+      "type": "list",
+      "description": "The first list to be merged."
+    },
+    {
+      "name": "second",
+      "type": "list",
+      "description": "The second list to be merged."
+    }
+  ],
+  "output": [
+    {
+      "name": "merged",
+      "type": "list",
+      "description": "A new list with merged elements of `first` and `second` lists."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "description": "Searches for a pattern in a text using a regular expression.",
+  "category": "Text Manipulation",
+  "input": [
+    {
+      "name": "text",
+      "type": "text",
+      "description": "A text value to be searched."
+    },
+    {
+      "name": "expression",
+      "type": "text",
+      "description": "A regular expression to be searched for within the list."
+    },
+    {
+      "name": "ignoreCase",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether lowercase and uppercase letters should be treated as equivalent. Defaults to true."
+    },
+    {
+      "name": "index",
+      "type": "number",
+      "default": 0,
+      "description": "The one-based index of a group within the match to be returned, or 0 to return the whole first match. Defaults to 0."
+    }
+  ],
+  "output": [
+    {
+      "name": "match",
+      "type": "text",
+      "description": "The whole first match between the regular expression and the given text when `index` argument is 0; otherwise, the specified group within the match. If there were no matches, null is returned."
+    },
+    {
+      "name": "groups",
+      "type": "list",
+      "description": "A full list of groups within the first match. If there were no matches, an empty list is returned."
+    }
+  ]
+}

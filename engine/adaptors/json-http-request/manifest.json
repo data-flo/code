@@ -1,0 +1,57 @@
+{
+  "description": "Sends a JSON encoded HTTP request.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "url",
+      "type": "url",
+      "description": "The URL to with the request is made."
+    },
+    {
+      "name": "method",
+      "type": "text",
+      "description": "The request command to use.\nDefaults to `\"POST\"`",
+      "default": "POST"
+    },
+    {
+      "name": "data",
+      "type": "collection",
+      "default": null,
+      "description": "The body of the HTTP request.\nDefaults to empty."
+    },
+    {
+      "name": "headers",
+      "type": "map",
+      "default": null,
+      "description": "Optional headers to be added."
+    },
+    {
+      "name": "multi request",
+      "type": "text",
+      "description": "The name of a list in `data` which contains a list of requests.`",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "status code",
+      "type": "text",
+      "description": "The HTTP status code of the response."
+    },
+    {
+      "name": "status text",
+      "type": "text",
+      "description": "The HTTP status text of the response."
+    },
+    {
+      "name": "data",
+      "type": "collection",
+      "description": "The body of the response."
+    },
+    {
+      "name": "headers",
+      "type": "map",
+      "description": "The HTTP headers of the response."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "description": "Creates an Epicollect5 form from a WHONET lab configuration file.",
+  "category": "Data Destinations",
+  "input": [
+    {
+      "name": "countryCode",
+      "type": "text",
+      "description": "An ISO 3166-1 alpha-3 country code, e.g. `GBR`. Refer to https://www.iso.org/obp/ui/#search/code/ for a list of codes."
+    },
+    {
+      "name": "laboratoryCode",
+      "type": "text",
+      "description": "The WHONET laboratory code, e.g. `18`."
+    },
+    {
+      "name": "antibiotics",
+      "type": "datatable",
+      "description": "A datatable containing `code`, `name`, `test` columns."
+    },
+    {
+      "name": "organisms",
+      "type": "datatable",
+      "description": "A datatable containing `ORG`, `ORGANISM`, and `COMMON` columns."
+    },
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "Data to be imported."
+    },
+    {
+      "name": "dbf",
+      "type": "file",
+      "description": "A WHONET data file."
+    }
+  ],
+  "output": [
+    {
+      "name": "dbf",
+      "type": "file",
+      "description": ""
+    }
+  ]
+}

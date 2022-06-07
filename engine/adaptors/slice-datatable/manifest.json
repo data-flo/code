@@ -1,0 +1,36 @@
+{
+  "description": "Returns a portion of a datatable into a new datatable selected from `begin` to `end`.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A list to be sliced."
+    },
+    {
+      "name": "begin",
+      "type": "integer",
+      "default": 1,
+      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the datatable.\nDefaults to `1` (first row in the datatable)."
+    },
+    {
+      "name": "end",
+      "type": "integer",
+      "default": null,
+      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the datatable.\nDefaults to `-1` (the last row in the datatable)."
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": null,
+      "description": "A positive integer specifying a limit on the number of rows to be extracted.\nDefaults to `null` (no limit)."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable containing the extracted rows."
+    }
+  ]
+}

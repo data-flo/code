@@ -1,0 +1,64 @@
+{
+  "description": "Joins rows of two datatables that have the same value for a specified column.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "main data",
+      "type": "datatable",
+      "description": "The main datatable."
+    },
+    {
+      "name": "main column",
+      "type": "text",
+      "description": "The name the column in the `main data` that is used to join rows of `other data`."
+    },
+    {
+      "name": "other data",
+      "type": "datatable",
+      "description": "The other datatable to be joined."
+    },
+
+    {
+      "name": "other column",
+      "type": "text",
+      "description": "The name the column in the `other data` on that is used to join rows of `main data`.\nIf unassigned, the value of `main column` will be used.",
+      "default": null
+    },
+    {
+      "name": "inner join",
+      "type": "boolean",
+      "description": "Specifies whether to include rows that have matching values in both tables.\nDefaults to `False`.",
+      "default": false
+    },
+    {
+      "name": "columns",
+      "type": "map",
+      "description": "Specifies which columns of `other data` to include.\nIf unassigned, all columns in `other data` will be included.",
+      "default": null
+    },
+    {
+      "name": "overwrite",
+      "type": "boolean",
+      "description": "Specifies whether to overwrite columns which exist in both tables.\nDefaults to `False`.",
+      "default": false
+    },
+    {
+      "name": "distance",
+      "type": "integer",
+      "description": "Specifies whether to use fuzzy matching when joining the rows.\nDefaults to `100` (full match).",
+      "default": 100
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable containing joined rows and columns."
+    },
+    {
+      "name": "skipped",
+      "type": "datatable",
+      "description": "A datatable containing rows which have not been joined."
+    }
+  ]
+}

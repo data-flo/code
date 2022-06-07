@@ -1,0 +1,31 @@
+{
+  "description": "Downloads a file from an S3 endpoint",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "url",
+      "type": "url",
+      "description": "The URL of the file, `https://bucket-name.s3.example.com/file/path`."
+    },
+    {
+      "name": "key",
+      "type": "text",
+      "description": "(Optional). If the ACL of the object is private provide the key that when combined with the secret, gives permission for downloading",
+      "default": null
+    },
+    {
+      "name": "secret",
+      "type": "text",
+      "description": "(Optional). If the ACL of the object is private provide the secret that when combined with the key, gives permission for downloading",
+      "default": null
+    }
+  ],
+
+  "output": [
+    {
+      "name": "file",
+      "type": "file",
+      "description": "The downloaded file."
+    }
+  ]
+}

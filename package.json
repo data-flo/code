@@ -1,0 +1,15 @@
+{
+  "name": "data-flo",
+  "version": "177.0.0",
+  "description": "Open-source, modular, and extensible data integration",
+  "author": "CGPS",
+  "scripts": {
+    "start": "cd app && npm run dev",
+    "dev": "cd app && npm run dev",
+    "release": "npm version major && git push && git push --tags"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-config-cgps": "cgps-dev/eslint-config"
+  }
+}

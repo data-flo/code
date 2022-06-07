@@ -1,0 +1,34 @@
+{
+  "description": "Runs an SQL query on an Oracle Database and returns the results as a datatable.",
+  "category": "Data Sources",
+  "input": [
+    {
+      "name": "connectionString",
+      "type": "text",
+      "description": "An Easy Connect string (e.g. hostname:port/service), a Connect Descriptor string, or the SID of a local Oracle Database instance. Defaults to `localhost:1521/XEPDB1`."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "default": "root",
+      "description": "The database server username. Defaults to \"root\"."
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "description": "The database server password."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "An valid SQL query."
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "An object containing columns and rows."
+    }
+  ]
+}

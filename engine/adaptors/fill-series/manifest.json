@@ -1,0 +1,30 @@
+{
+  "description": "Fills empty values of a datatable column with series of values.",
+  "category": "Data Tables",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable to be filled."
+
+    },
+    {
+      "name": "column",
+      "type": "text",
+      "description": "The name of a column in `data` to be filled."
+    },
+    {
+      "name": "start",
+      "type": "text",
+      "description": "The start value of the series.\nIf unspecified, it defaults to the last non-empty value.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A new datatable with specified column filled."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Replaces each element in a list of text according to the given pattern, returning the new list",
+  "category": "List Manipulation",
+  "input": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A list of text elements"
+    },
+    {
+      "name": "pattern",
+      "type": "text",
+      "description": "The text to be replaced or a regular expression describing it.\nRegular expressions must be wrapped with `/` character (e.g. `/.*/`). Capture groups can be used by the replacement field (e.g. as `$1`, `$2` etc)."
+    },
+    {
+      "name": "replacement",
+      "type": "text",
+      "description": "The replacement for the text matched by the specified `pattern` parameter.\n If unspecified, matches will be replaced with a blank text (i.e. `\"\"`). If a regular expression was used in the pattern field, capture groups and the following special syntax is allowed: `$$` - '$' character; ``$``` - text preceding the match; `$'` text following the match.",
+      "default": ""
+    }
+  ],
+  "output": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "The list of modified elements"
+    }
+  ]
+}

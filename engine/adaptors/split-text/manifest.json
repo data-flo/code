@@ -1,0 +1,35 @@
+{
+  "description": "Splits a text into a list of texts using a specified separator text to determine where to make each split.",
+  "category": "Text Manipulation",
+  "input": [
+    {
+      "name": "text",
+      "type": "text",
+      "description": "A text to be split."
+    },
+    {
+      "name": "separator",
+      "type": "text",
+      "default": "\n",
+      "description": "The separator text, or regular expression, which denotes the points at which each split should occur. \nThe separator is treated a regular expression if it begins and ends with `/`. \nDefaults to `\n` (newline)."
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": null,
+      "description": "A positive integer specifying a limit on the number of splits to be found. \nDefaults to `null` (no limit)."
+    }
+  ],
+  "output": [
+    {
+      "name": "subtexts",
+      "type": "list",
+      "description": "A list of texts split at each point where the separator occurs in the input text, or an empty list if no occurrences found."
+    },
+    {
+      "name": "occurrences",
+      "type": "number",
+      "description": "The number times the separator occurs in the input text."
+    }
+  ]
+}

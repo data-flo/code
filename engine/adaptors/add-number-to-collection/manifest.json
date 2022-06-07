@@ -1,0 +1,28 @@
+{
+  "description": "Adds a number to a collection.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "collection",
+      "type": "collection",
+      "description": "A collection to which the number will be added."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The key of the number in the collection."
+    },
+    {
+      "name": "number",
+      "type": "number",
+      "description": "A number to be added to the collection."
+    }
+  ],
+  "output": [
+    {
+      "name": "collection",
+      "type": "collection",
+      "description": "A copy of the collection with the number."
+    }
+  ]
+}

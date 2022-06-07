@@ -1,0 +1,41 @@
+{
+  "description": "Sums values in specified columns.",
+  "category": "Data Manipulation",
+  "input": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable containing data."
+    },
+    {
+      "name": "columns",
+      "type": "list",
+      "description": "A list of columns."
+    },
+    {
+      "name": "start value",
+      "type": "number",
+      "description": "The start value of the series. Defaults to `0`.",
+      "default": 0
+    },
+    {
+      "name": "previous coefficient",
+      "type": "number",
+      "description": "The coefficient applied to the previous value. Defaults to `1`.",
+      "default": 1
+    },
+    {
+      "name": "current coefficient",
+      "type": "number",
+      "description": "The coefficient applied to the current value. Defaults to `1`.",
+      "default": 1
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "datatable",
+      "description": "A datatable with the updated `columns`."
+    }
+  ]
+}

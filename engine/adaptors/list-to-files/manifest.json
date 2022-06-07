@@ -1,0 +1,36 @@
+{
+  "description": "Converts lists of text to a list of files.",
+  "category": "List Manipulation",
+  "input": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A list of the contents of each file as text."
+    },
+    {
+      "name": "encoding",
+      "type": "text",
+      "default": "utf8",
+      "description": "The encoding of text. \nSupported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1` \nDefaults to `utf8`"
+    },
+    {
+      "name": "names",
+      "type": "list",
+      "description": "A list of filenames in the same order as the contents parameter.",
+      "default": "Unnamed"
+    },
+    {
+      "name": "media type",
+      "type": "text",
+      "description": "An optional MIME type describing the file content. \nDefaults to `text/plain`.",
+      "default": "text/plain"
+    }
+  ],
+  "output": [
+    {
+      "name": "files",
+      "type": "list",
+      "description": "A list of files with the content from the `list` parameter."
+    }
+  ]
+}

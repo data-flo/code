@@ -1,0 +1,35 @@
+{
+  "description": "Adds a text value to a map.",
+  "category": "Map Manipulation",
+  "input": [
+    {
+      "name": "map",
+      "type": "map",
+      "description": "A map to which the value will be added.\nIf unspecified, the value will be added to a new map.",
+      "default": null
+    },
+    {
+      "name": "key",
+      "type": "text",
+      "description": "The key to be added to the map."
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The value to be added to the map."
+    },
+    {
+      "name": "overwrite",
+      "type": "boolean",
+      "description": "Whether to overwrite the value if the specified key already exists in the map.\nDefaults to True`.",
+      "default": true
+    }
+  ],
+  "output": [
+    {
+      "name": "map",
+      "type": "map",
+      "description": "A map containing the added value."
+    }
+  ]
+}

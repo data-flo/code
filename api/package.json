@@ -1,0 +1,34 @@
+{
+  "name": "data-flo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "migrate-mongo up"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cgps-application-server": "cgps-dev/application-server#v18.0.0",
+    "cgps-user-accounts": "cgps-dev/user-accounts#dataflo",
+    "connect-mongo": "^3.2.0",
+    "console-stamp": "^0.2.6",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-form-data": "^2.0.14",
+    "express-session": "^1.15.6",
+    "filehound": "^1.16.4",
+    "gravatar": "^1.6.0",
+    "is-stream": "^2.0.0",
+    "merge-options": "^1.0.1",
+    "migrate-mongo": "^7.0.1",
+    "mongoose": "^5.3.0",
+    "short-uuid": "^3.1.1",
+    "slugify": "^1.3.4",
+    "yn": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-cgps": "cgps-dev/eslint-config"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Looks up a value in a map.",
+  "category": "Map Manipulation",
+  "input": [
+    {
+      "name": "dictionary",
+      "type": "map",
+      "description": "A map dictionary to lookup."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "The key in `dictionary`."
+    },
+    {
+      "name": "default",
+      "type": "text",
+      "description": "The value to be returned if `query` is not found in `dictionary`.\n Defaults to `null`.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The value in `dictionary` associated to `query` if found, otherwise the value of `default`."
+    }
+  ]
+}

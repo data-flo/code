@@ -1,0 +1,24 @@
+{
+  "description": "Creates a list from JSON text.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "json",
+      "type": "text",
+      "description": "A text containing a JSON document."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "default": "",
+      "description": ""
+    }
+  ],
+  "output": [
+    {
+      "name": "list",
+      "type": "list",
+      "description": "A list."
+    }
+  ]
+}

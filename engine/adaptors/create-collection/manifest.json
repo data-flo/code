@@ -1,0 +1,19 @@
+{
+  "description": "Creates an empty collection.",
+  "category": "JSON Manipulation",
+  "input": [
+    {
+      "name": "initial entries",
+      "type": "map",
+      "description": "An optional values to initiate the empty collection.",
+      "default": null
+    }
+  ],
+  "output": [
+    {
+      "name": "collection",
+      "type": "collection",
+      "description": "The new collection."
+    }
+  ]
+}
