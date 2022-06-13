@@ -17,12 +17,12 @@
     {
       "name": "same",
       "type": "datatable",
-      "description": ""
+      "description": "A datatable containing rows which have the same values in selected columns."
     },
     {
       "name": "different",
       "type": "datatable",
-      "description": ""
+      "description": "A datatable containing rows which have different values in selected columns."
     }
   ]
 }
