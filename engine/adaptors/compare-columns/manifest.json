@@ -11,6 +11,12 @@
       "name": "columns",
       "type": "list",
       "description": "A list of columns to compare."
+    },
+    {
+      "name": "case sensitive",
+      "type": "boolean",
+      "description": "Whether lowercase and uppercase letters should be treated as equivalent.\nDefaults to `False`.",
+      "default": false
     }
   ],
   "output": [
