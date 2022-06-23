@@ -18,6 +18,12 @@
       "description": "The source column with the place query."
     },
     {
+      "name": "feature types",
+      "type": "list",
+      "description": "Filter results to include only a subset (one or more) of the available feature types.\nOptions are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`.",
+      "default": null
+    },
+    {
       "name": "longitudeColumn",
       "type": "text",
       "default": "longitude",
