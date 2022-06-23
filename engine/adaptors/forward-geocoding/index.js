@@ -6,11 +6,18 @@ module.exports = async function (args, context) {
   const geocoder = (row) => {
     const query = row[args.placeColumn] || " ";
     return context.cache(
-      `adaptors/forward-geocoding/${query}`,
+      `adaptors/forward-geocoding/${(args["feature types"] || []).join(",")}${query}`,
       360 * 24,
-      () => geocodingClient.forwardGeocode({ query, limit: 1 }).send()
-        .then((results) => (results.body.features.length ? results.body.features[0] : null))
-        .then((feature) => (feature ? [feature.center, feature.place_type] : null))
+      () => (
+        geocodingClient.forwardGeocode({
+          query,
+          limit: 1,
+          types: args["feature types"] || undefined,
+        })
+          .send()
+          .then((results) => (results.body.features.length ? results.body.features[0] : null))
+          .then((feature) => (feature ? [feature.center, feature.place_type] : null))
+      )
     );
   };
   const features = new Map();
