@@ -31,9 +31,17 @@ module.exports = async function (args, context) {
     (row) => {
       const location = locations.get(row);
       if (location) {
-        const feature = location.find((x) => x.place_type.includes(args.placeType));
-        if (feature && feature.text) {
-          return feature.text;
+        if (args.placeType === "country code") {
+          const feature = location.find((x) => x.place_type.includes("country"));
+          if (feature && feature.properties && feature.properties.short_code) {
+            return feature.properties.short_code;
+          }
+        }
+        else {
+          const feature = location.find((x) => x.place_type.includes(args.placeType));
+          if (feature && feature.text) {
+            return feature.text;
+          }
         }
       }
       return "";
