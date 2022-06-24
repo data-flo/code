@@ -59,7 +59,7 @@ module.exports = async function (args, context) {
 
   if (args.cache > 0) {
     return context.cache(
-      `adaptors/google-spreadsheet/${spreadsheetId}`,
+      `adaptors/google-spreadsheet/${spreadsheetId}${sheetname}${range}${skip}`,
       args.cache,
       fetch,
       args
