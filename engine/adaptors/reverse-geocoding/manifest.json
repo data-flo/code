@@ -15,20 +15,20 @@
     {
       "name": "placeType",
       "type": "text",
-      "description": "The type of the geographic feature are available in the Mapbox geocoder. Valid options are \"country\", \"region\", \"postcode\", \"district\", \"place\", \"locality\", \"neighborhood\", \"address\", and \"poi\". Defaults to \"country\".",
+      "description": "The type of the geographic feature are available in the Mapbox geocoder. Valid options are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`. Defaults to `country`.",
       "default": "country"
     },
     {
       "name": "longitudeColumn",
       "type": "text",
       "default": "longitude",
-      "description": "The source column for the longitude result. Defaults to \"longitude\"."
+      "description": "The source column for the longitude result. Defaults to `longitude`."
     },
     {
       "name": "latitudeColumn",
       "type": "text",
       "default": "latitude",
-      "description": "The source column for the latitude result. Defaults to \"latitude\"."
+      "description": "The source column for the latitude result. Defaults to `latitude`."
     },
     {
       "name": "resultColumn",
