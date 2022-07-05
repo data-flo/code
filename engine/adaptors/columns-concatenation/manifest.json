@@ -1,46 +1,46 @@
 {
-  "description": "Concatenate a columns values into a new column.",
+  "description": "Concatenate values from two or more columns, and/or adds a text prefix, and/or adds a text suffix into a new column.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "The datatable you want to concatenate on to."
+      "description": "The datatable containing the columns to be concatenated."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns from the data."
+      "description": "A list of columns to be concatenated. The output value matches the listed order."
     },
     {
       "name": "delimiter",
       "type": "text",
-      "description": "Specifies a text to separate each value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to separate each concatenated value. Defaults to `\"\"` (blank).",
       "default": ""
     },
     {
       "name": "prefix",
       "type": "text",
-      "description": "Specifies a text to be prefixed to each concatenated value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to be prefixed to each concatenated value. Defaults to `\"\"` (blank).",
       "default": ""
     },
     {
       "name": "postfix",
       "type": "text",
-      "description": "Specifies a text to be postfixed to each concatenated value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to be postfixed to each concatenated value. Defaults to `\"\"` (blank).",
       "default": ""
     },
     {
       "name": "target",
       "type": "text",
-      "description": "The name of the new column."
+      "description": "The new column containing concatenated values."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "The data with the newly concatenated data and target column added."
+      "description": "A datatable with the concatenated column added."
     }
   ]
 }

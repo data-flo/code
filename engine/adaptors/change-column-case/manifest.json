@@ -1,17 +1,17 @@
 {
-  "description": "Converts the case of text values of a datatable column.",
+  "description": "Converts the case of text values in a datatable column.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be converted."
+      "description": "The datatable containing the column to be converted."
 
     },
     {
       "name": "column",
       "type": "text",
-      "description": "The name of a column in data to be converted."
+      "description": "The column to be converted."
     },
     {
       "name": "case",

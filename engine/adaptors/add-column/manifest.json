@@ -5,7 +5,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to which the new column will be added."
+      "description": "The datatable to which the new column will be added."
 
     },
     {
@@ -24,7 +24,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with target column added."
+      "description": "A new datatable with the new column added."
     }
   ]
 }

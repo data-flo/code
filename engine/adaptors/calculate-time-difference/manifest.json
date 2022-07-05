@@ -1,12 +1,12 @@
 
 {
-  "description": "Calculates the time difference (in a specified unit of measurement) between two datatable columns.",
+  "description": "Calculates the time difference (in a specified unit of measurement) between two datatable columns. (reference column - value column)",
   "category": "Data Manipulation",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable."
+      "description": "The datatable containing two date/time columns."
     },
     {
       "name": "reference column",
@@ -38,14 +38,14 @@
     {
       "name": "target column",
       "type": "text",
-      "description": "The name of the column to which time difference values will be added."
+      "description": "The name of the new column containing time difference values."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable with formatted values."
+      "description": "A new datatable with the new column added."
     }
   ]
 }

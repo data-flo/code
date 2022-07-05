@@ -5,17 +5,17 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "The input datatable."
+      "description": "The datatable containing the columns to compare."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to compare."
+      "description": "A list of columns to be compared."
     },
     {
       "name": "case sensitive",
       "type": "boolean",
-      "description": "Whether lowercase and uppercase letters should be treated as equivalent.\nDefaults to `False`.",
+      "description": "Whether lowercase and uppercase letters should be treated as equivalent.\nDefaults to `False` (Lowercase and Uppercase letters are treated as equivalent).",
       "default": false
     }
   ],
