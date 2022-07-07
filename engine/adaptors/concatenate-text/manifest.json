@@ -1,23 +1,23 @@
 {
-  "description": "Concatenates text to the left and/or the right of the input, then returns the combined text as an output.",
+  "description": "Concatenates two texts",
   "category": "Text Manipulation",
   "input": [
     {
       "name": "left",
       "type": "text",
-      "description": "Text to be joined to the left of the input. Defaults to \"\""
+      "description": "First text to be concatenated"
     },
     {
       "name": "right",
       "type": "text",
-      "description": "Text to be joined to the right of the input. Defaults to \"\""
+      "description": "Second text to be concatenated"
     }
   ],
   "output": [
     {
       "name": "combination",
       "type": "text",
-      "description": "The combined text."
+      "description": "The concatenated text."
     }
   ]
 }

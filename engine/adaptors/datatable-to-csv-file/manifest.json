@@ -1,11 +1,11 @@
 {
-  "description": "Converts a datatable to a CSV string.",
+  "description": "Exports a datatable to a CSV file.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable to be exported."
     },
     {
       "name": "separator",
@@ -22,21 +22,21 @@
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to be included in the CSV text.\nDefaults to `null` (all columns).",
+      "description": "A list of columns to be exported to the CSV file.\nIf unspecified, all columns will be exported.",
       "default": null
     },
     {
       "name": "filename",
       "type": "text",
       "default": "data.csv",
-      "description": "The name of the output file.\nDefaults to `data.csv`."
+      "description": "The name of the output file.\nIf unspecified, defaults to `data.csv`."
     }
   ],
   "output": [
     {
       "name": "csv",
       "type": "file",
-      "description": "A text file in CSV format."
+      "description": "A file in CSV format."
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "description": "Converts a datatable to a list of said datatables columns.",
+  "description": "Creates a list of datatable column names.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable containing columns to be listed."
     }
   ],
   "output": [
     {
       "name": "columns",
       "type": "list",
-      "description": "An array if items." 
+      "description": "The list of column names." 
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "description": "Creates a sub folder in a parent Google Drive.\nThe parent folder should be shared to with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
+  "description": "Creates a sub folder in a parent folder in Google Drive.\nThe parent folder should be shared with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
   "category": "Data Destinations",
   "input": [
     {
       "name": "parent",
       "type": "url",
-      "description": "The URL of the parent folder on Google Drive."
+      "description": "The URL of the parent folder in Google Drive."
     },
     {
       "name": "name",
       "type": "text",
-      "description": "The name of the folder to create."
+      "description": "The name of the folder to be created."
     }
   ],
   "output": [

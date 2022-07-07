@@ -5,7 +5,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A collection to which the sub-collection will be added."
+      "description": "The collection to which the sub-collection will be added."
     },
     {
       "name": "name",
@@ -22,7 +22,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A copy of the collection with the sub-collection added."
+      "description": "A new collection with the sub-collection added."
     }
   ]
 }

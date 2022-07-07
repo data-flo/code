@@ -1,11 +1,11 @@
 {
-  "description": "Converts a CSV string to a datatable.",
+  "description": "Converts delimited text (e.g. comma-separated values) to a datatable.",
   "category": "Data Tables",
   "input": [
     {
       "name": "csv",
       "type": "text",
-      "description": "A string containing a .csv or .tsv formatted data."
+      "description": "The text to be converted to a datatable"
     },
     {
       "name": "separator",
@@ -24,7 +24,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A new datatable."
     }
   ]
 }
