@@ -5,19 +5,19 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing the values column."
+      "description": "The datatable containing the column values."
     },
     {
       "name": "column",
       "type": "text",
-      "description": "The name of the column from which the list elements will be created."
+      "description": "The name of the column from which the list will be created."
     }
   ],
   "output": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list containing the values of the datatable column."
+      "description": "A list containing the values from the datatable column."
     }
   ]
 }

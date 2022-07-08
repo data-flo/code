@@ -22,7 +22,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A new collection with the sub-collection added."
+      "description": "A collection with the sub-collection added."
     }
   ]
 }

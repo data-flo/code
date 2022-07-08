@@ -1,5 +1,5 @@
 {
-  "description": "Finds rows in a datatable that match a search string or regular expression.",
+  "description": "Finds rows in a datatable that match a search pattern.",
   "category": "Data Tables",
   "input": [
     {
@@ -16,19 +16,19 @@
     {
       "name": "pattern",
       "type": "text",
-      "description": "A string or a regular expression to be searched for within the list. Regular expressions must be wrapped with / character (e.g. /.*/)."
+      "description": "A text or a regular expression to be searched for within the list. Regular expressions must be wrapped with / character (e.g. /.*/)."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the rows that match the testing expression; otherwise, an empty datatable is returned."
+      "description": "A datatable with the rows that match the testing pattern."
     },
     {
       "name": "complementary",
       "type": "datatable",
-      "description": "A new datatable with the rows that do not match the testing expression."
+      "description": "A datatable with the rows that do not match the testing pattern."
     }
   ]
 }

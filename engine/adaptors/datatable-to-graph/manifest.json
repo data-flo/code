@@ -1,34 +1,34 @@
 {
-  "description": "Converts a datatable to a graph.",
+  "description": "Creates a graph structure from a datatable containing edge data.",
   "category": "Graph Manipulation",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable containing edge data."
     },
     {
       "name": "from",
       "type": "text",
-      "description": "The key of the value you wish to start from."
+      "description": "The name of the column containing the origin node of the edge."
     },
     {
       "name": "to",
       "type": "text",
-      "description": "The key of the value you wish to end at."
+      "description": "The name of the column containing the destination node of the edge."
     },
     {
       "name": "direction",
       "type": "text",
       "default": "none",
-      "description": "Defaults to \"none\"."
+      "description": "Specifies whether the graph is directed or not.\nIf unspecified, defaults to \"none\"."
     }
   ],
   "output": [
     {
       "name": "graph",
       "type": "graph",
-      "description": "An object containing nodes and edges."
+      "description": "A graph structure defining nodes and edges."
     }
   ]
 }

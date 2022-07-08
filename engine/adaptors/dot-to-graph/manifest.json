@@ -1,5 +1,5 @@
 {
-  "description": "Parses a DOT string as a graph.",
+  "description": "Creates a graph structure from text in DOT language format",
   "category": "Graph Manipulation",
   "input": [
     {

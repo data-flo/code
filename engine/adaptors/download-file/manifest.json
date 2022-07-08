@@ -1,18 +1,18 @@
 {
-  "description": "Downloads a file on the web.",
+  "description": "Imports a file from the web.",
   "category": "Data Sources",
   "input": [
     {
       "name": "url",
       "type": "url",
-      "description": "The url of the file to download."
+      "description": "The url of the file to be imported."
     }
   ],
   "output": [
     {
       "name": "file",
       "type": "file",
-      "description": "The downloaded file."
+      "description": "The imported file."
     }
   ]
 }

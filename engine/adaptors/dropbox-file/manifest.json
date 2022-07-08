@@ -5,14 +5,14 @@
     {
       "name": "url",
       "type": "text",
-      "description": "The url of the target Dropbox file."
+      "description": "The URL of the Dropbox file to be imported."
     }
   ],
   "output": [
     {
       "name": "file",
       "type": "file",
-      "description": "The imported Dropbox file."
+      "description": "The imported file."
     }
   ]
 }

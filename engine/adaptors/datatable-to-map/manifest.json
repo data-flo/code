@@ -5,18 +5,18 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable containing key-value pairs."
     },
     {
       "name": "key column",
       "type": "text",
-      "description": "The name of the column which contains keys.\n Defaults to `key`.",
+      "description": "The name of the column which contains keys.\n If unspecified, defaults to `key`.",
       "default": "key"
     },
     {
       "name": "value column",
       "type": "text",
-      "description": "The name of the column which contains values..\n Defaults to `value`.",
+      "description": "The name of the column which contains values.\n If unspecified, defaults to `value`.",
       "default": "value"
     }
   ],

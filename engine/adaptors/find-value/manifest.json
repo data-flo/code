@@ -1,28 +1,28 @@
 {
-  "description": "Finds a value in a list that match a search string or regular expression.",
+  "description": "Finds a value in a list that matches a search pattern.",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be searched."
+      "description": "The list to be searched."
     },
     {
       "name": "pattern",
       "type": "text",
-      "description": "A string or a regular expression to be searched for within the list. Regular expressions must be wrapped with / character (e.g. /.*/)."
+      "description": "The text or a regular expression to be searched for within the list."
     }
   ],
   "output": [
     {
       "name": "value",
       "type": "text",
-      "description": "The value of the first element in the list that match the testing expression; otherwise, null is returned."
+      "description": "The value of the first match in the list."
     },
     {
       "name": "index",
       "type": "integer",
-      "description": "The one-based index of first element in the list that match the testing expression; otherwise, null is returned."
+      "description": "The one-based index of first match in the list."
     }
   ]
 }

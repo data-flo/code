@@ -1,18 +1,18 @@
 {
-  "description": "Imports a file from Figshare.",
+  "description": "Imports a file from Figshare (https://figshare.com/).",
   "category": "Data Sources",
   "input": [
     {
       "name": "url",
       "type": "text",
-      "description": "The url of the target Figshare file."
+      "description": "The URL of the Figshare file to be imported."
     }
   ],
   "output": [
     {
       "name": "file",
       "type": "file",
-      "description": "The imported Figshare file."
+      "description": "The imported file."
     }
   ]
 }

@@ -1,28 +1,28 @@
 {
-  "description": "Finds values in a list that match a search string or regular expression.",
+  "description": "Finds values in a list that match a pattern.",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be searched."
+      "description": "The list to be filtered."
     },
     {
       "name": "pattern",
       "type": "text",
-      "description": "A string or a regular expression to be searched for within the list. Regular expressions must be wrapped with / character (e.g. /.*/)."
+      "description": "A text or a regular expression to be searched for within the list. Regular expressions must be wrapped with / character (e.g. /.*/)."
     }
   ],
   "output": [
     {
       "name": "values",
       "type": "list",
-      "description": "A new list with the elements that match the testing expression; otherwise, an empty list is returned."
+      "description": "A list with the elements that match the testing pattern"
     },
     {
       "name": "complementary",
       "type": "list",
-      "description": "A new list with the elements that do not match the testing expression."
+      "description": "A list with the elements that do not match the testing pattern."
     }
   ]
 }

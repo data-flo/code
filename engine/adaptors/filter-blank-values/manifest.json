@@ -1,29 +1,29 @@
 {
-  "description": "Finds rows in a datatable that match a search string or regular expression.",
+  "description": "Filters blank rows in a datable column.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched."
+      "description": "The datatable to be filtered."
 
     },
     {
       "name": "column",
       "type": "text",
-      "description": "The name of column in the datatable to be searched."
+      "description": "The name of the column to be filtered."
     }
   ],
   "output": [
     {
       "name": "blanks",
       "type": "datatable",
-      "description": "A new datatable with the rows that match the testing expression; otherwise, an empty datatable is returned."
+      "description": "A datatable containing the rows with blanks in the specified column."
     },
     {
       "name": "non-blanks",
       "type": "datatable",
-      "description": "A new datatable with the rows that *did not match* the testing expression."
+      "description": "A datatable containing the rows with non-blanks in the specified column"
     }
   ]
 }

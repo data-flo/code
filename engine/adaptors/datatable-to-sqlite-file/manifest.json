@@ -1,5 +1,5 @@
 {
-  "description": "Writes a datatable to a SQLite DB file.",
+  "description": "Exports a datatable to a SQLite DB file.",
   "category": "Data Destinations",
   "input": [
     {
@@ -10,25 +10,25 @@
     {
       "name": "table name",
       "type": "text",
-      "description": "The name of an existing table in the SQLite file to which the data to will exported."
+      "description": "The name of the SQLite database table to which the data will be exported."
     },
     {
       "name": "id column name",
       "type": "text",
-      "description": "The name of column which contains unique row IDs.",
+      "description": "The name of the column which contains unique row IDs.",
       "default": null
     },
     {
       "name": "data",
       "type": "datatable",
-      "description": "Data to be exported."
+      "description": "The datatable to be exported."
     }
   ],
   "output": [
     {
       "name": "sqlite",
       "type": "file",
-      "description": "A file in SQLite format with the data to exported."
+      "description": "A file in SQLite format with the data to be exported."
     },
     {
       "name": "ids",
