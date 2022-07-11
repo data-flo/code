@@ -1,5 +1,5 @@
 {
-  "description": "Forward geocode a place into latitude & longitude.",
+  "description": "Converts location names in a datatable column to latitude & longitude.",
   "category": "Data Tables",
   "input": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable containing the column to be converted."
     },
     {
       "name": "placeColumn",
       "type": "text",
-      "description": "The source column with the place query."
+      "description": "The name of the column containing locaton names."
     },
     {
       "name": "feature types",
@@ -27,13 +27,13 @@
       "name": "longitudeColumn",
       "type": "text",
       "default": "longitude",
-      "description": "The target column for the longitude result. Defaults to \"longitude\"."
+      "description": "The name of the column for the longitude result. If unspecified, defaults to \"longitude\"."
     },
     {
       "name": "latitudeColumn",
       "type": "text",
       "default": "latitude",
-      "description": "The target column for the latitude result. Defaults to \"latitude\"."
+      "description": "The name of the column for the latitude result. If unspecified, defaults to \"latitude\"."
     },
     {
       "name": "typeColumn",
@@ -46,7 +46,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A datatable with the latitude and longitude values added."
     }
   ]
 }

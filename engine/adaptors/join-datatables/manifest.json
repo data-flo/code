@@ -1,5 +1,5 @@
 {
-  "description": "Joins rows of two datatables that have the same value for a specified column.",
+  "description": "Joins two datatables based on a common column between them.",
   "category": "Data Tables",
   "input": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "main column",
       "type": "text",
-      "description": "The name the column in the `main data` that is used to join rows of `other data`."
+      "description": "The name of the column in the `main data` that is used to join rows of `other data`."
     },
     {
       "name": "other data",

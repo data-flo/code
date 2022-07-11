@@ -1,16 +1,16 @@
 {
-  "description": "Gathers rows in wide format to long format. See http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2.",
+  "description": "Reshapes rows from wide format to long format. See http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable in wide format."
+      "description": "The datatable in wide format."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "Columns to keep."
+      "description": "The list of columns which will not be reshaped. \n If unspecified, all columns will be reshaped."
     },
     {
       "name": "key",

@@ -1,49 +1,49 @@
 {
-  "description": "Applies forces to a graph to produce a layout based on node and edge relationships.",
+  "description": "Applies a force-directed graph drawing algorithm (https://en.wikipedia.org/wiki/Force-directed_graph_drawing) on a specified graph.",
   "category": "Graph Manipulation",
   "input": [
     {
       "name": "graph",
       "type": "graph",
-      "description": "An object containing nodes and edges."
+      "description": "The object containing nodes and edges."
     },
     {
       "name": "stiffness",
       "type": "number",
       "default": 400.0,
-      "description": "Defaults to 400.0."
+      "description": "If unspecified, defaults to 400.0."
     },
     {
       "name": "repulsion",
       "type": "number",
       "default": 400.0,
-      "description": "How much each node should node push each other away. Defaults to 400.0."
+      "description": "How much each node should node push each other away. If unspecified, defaults to 400.0."
     },
     {
       "name": "damping",
       "type": "number",
       "default": 0.5,
-      "description": "The amount to lessen the force to be applied. Defaults to 0.5."
+      "description": "The amount to lessen the force to be applied. If unspecified, defaults to 0.5."
 
     },
     {
       "name": "minEnergyThreshold",
       "type": "number",
       "default": null,
-      "description": "The minimum amount of force that should be applied. Defaults to null."
+      "description": "The minimum amount of force that should be applied. If unspecified, defaults to null."
     },
     {
       "name": "maxSpeed",
       "type": "number",
       "default": null,
-      "description": "The maximum amount of speed that should be applied. Defaults to null."
+      "description": "The maximum amount of speed that should be applied. If unspecified, defaults to null."
     }
   ],
   "output": [
     {
       "name": "graph",
       "type": "graph",
-      "description": "An object containing nodes and edges, now with x/y attributes applied to each node."
+      "description": "A force-directed graph drawing"
     }
   ]
 }

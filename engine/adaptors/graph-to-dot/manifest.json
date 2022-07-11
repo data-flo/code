@@ -1,18 +1,18 @@
 {
-  "description": "Converts a graph to a DOT string.",
+  "description": "Exports a graph as a text file in DOT format.",
   "category": "Graph Manipulation",
   "input": [
     {
       "name": "graph",
       "type": "graph",
-      "description": "An object containing nodes and edges."
+      "description": "The graph structure to be exported."
     }
   ],
   "output": [
     {
       "name": "dot",
       "type": "text",
-      "description": "Text in the .dot format."
+      "description": "A text file in DOT format ('.DOT')."
     }
   ]
 }

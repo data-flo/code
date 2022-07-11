@@ -1,17 +1,17 @@
 
 {
-  "description": "Splits date values into new columns.",
+  "description": "Formats date/time values within a datatable column",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "The datatable you want to concatenate on to."
+      "description": "The datatable containing the column to be formatted."
     },
     {
       "name": "source column",
       "type": "text",
-      "description": "The name of the column containing source date/time values."
+      "description": "The name of the column containing the date/time values."
     },
     {
       "name": "source format",
@@ -34,7 +34,7 @@
     {
       "name": "locale",
       "type": "text",
-      "description": "A language locale to be used when formatting the values.\nSee https://date-fns.org/v2.0.1/docs/I18n#supported-languages for a list of supported languages.\nnIf unspecified, `locale` defaults to `en-GB`.",
+      "description": "The language locale to be used when formatting the values.\nSee https://date-fns.org/v2.0.1/docs/I18n#supported-languages for a list of supported languages.\nnIf unspecified, `locale` defaults to `en-GB`.",
       "default": "en-GB"
     }
   ],
