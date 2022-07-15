@@ -15,7 +15,7 @@
     {
       "name": "sub-collection",
       "type": "collection",
-      "description": "A collection to be added to the collection."
+      "description": "The collection to be added to the first collection."
     }
   ],
   "output": [
