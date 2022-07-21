@@ -1,22 +1,22 @@
 {
-  "description": "Replaces values in a text with some or all matches of a pattern replaced by a replacement.\nThe pattern can be a test or a regular expression.\nIf pattern is a text, only the first occurrence will be replaced.",
+  "description": "Replaces values in a text with some or all matches of a pattern replaced by a new value.\nThe pattern can be a text or a regular expression.\nIf pattern is a text, only the first occurrence will be replaced.",
   "category": "Text Manipulation",
   "input": [
     {
       "name": "text",
       "type": "text",
-      "description": "A text to be searched."
+      "description": "The text to be searched."
 
     },
     {
       "name": "pattern",
       "type": "text",
-      "description": "A text or a regular expression to be replaced.\nRegular expressions must be wrapped with `/` character (e.g. `/.*/`)."
+      "description": "The text or regular expression to be replaced.\nRegular expressions must be wrapped with `/` character (e.g. `/.*/`)."
     },
     {
       "name": "replacement",
       "type": "text",
-      "description": "A text that replaces the substring specified by the specified `pattern` parameter.\n If unspecified, matches will be replaced with a blank text (i.e. `\"\"`).",
+      "description": "The text that replaces the 'pattern'.\n If unspecified, matches will be replaced with a blank text (i.e. `\"\"`).",
       "default": ""
     }
   ],
@@ -24,7 +24,7 @@
     {
       "name": "text",
       "type": "text",
-      "description": "A new text with the replacement."
+      "description": "A text with the values replaced."
     }
   ]
 }

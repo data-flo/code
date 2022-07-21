@@ -5,12 +5,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to which UUID values will be added."
+      "description": "The datatable to which UUID values will be added."
     },
     {
       "name": "target column",
       "type": "text",
-      "description": "The name of an existing column in `data` to which UUID values will be added.\nA new column will created if it does not exist in `data`."
+      "description": "The name of an existing column in `data` to which UUID values will be added.\nIf unspecified, a new column will be created."
     },
     {
       "name": "source column",
@@ -21,13 +21,13 @@
     {
       "name": "short",
       "type": "boolean",
-      "description": "Specifies whether to shorten the generated IDs.\nSee https://www.npmjs.com/package/short-uuid#details.\nDefaults to `False`.",
+      "description": "Specifies whether to shorten the generated IDs.\nSee https://www.npmjs.com/package/short-uuid#details. \nIf unspecified, defaults to `False`.",
       "default": false
     },
     {
       "name": "overwrite",
       "type": "boolean",
-      "description": "Specifies whether to overwrite existing values.\nDefaults to `False`.",
+      "description": "Specifies whether to overwrite existing values.\nIf unspecified, defaults to `False`.",
       "default": false
     }
   ],
@@ -35,7 +35,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with specified column added."
+      "description": "A datatable with specified column added."
     }
   ]
 }

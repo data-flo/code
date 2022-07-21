@@ -1,24 +1,24 @@
 {
-  "description": "Discards a list of columns from datatable.",
+  "description": "Removes a list of columns from datatable.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing columns to be discarded."
+      "description": "The datatable containing columns to be removed."
 
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to be excluded."
+      "description": "The list of columns to be removed."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the discarded columns."
+      "description": "A datatable with columns removed."
     }
   ]
 }

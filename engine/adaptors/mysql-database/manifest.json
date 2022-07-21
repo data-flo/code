@@ -1,46 +1,46 @@
 {
-  "description": "Connect to and query a MySQL database and convert the result to a datatable; SELECT statements only.",
+  "description": "Imports data from a MySQL database.",
   "category": "Data Sources",
   "input": [
     {
       "name": "hostname",
       "type": "text",
       "default": "localhost",
-      "description": "The name of the database host. Defaults to \"localhost\"."
+      "description": "The hostname or the IP address or the database server.\nIf unspecified, defaults to \"localhost\"."
     },
     {
       "name": "port",
       "type": "integer",
       "default": 3306,
-      "description": "The port the database is exposed on. Defaults to 3306."
+      "description": "The port of the database server.\nIf unspecified, defaults to 3306."
     },
     {
       "name": "database",
       "type": "text",
-      "description": "The database to connect to."
+      "description": "The name of the database."
     },
     {
       "name": "username",
       "type": "text",
       "default": "root",
-      "description": "The database's username. Defaults to \"root\"."
+      "description": "The username to connect to the database.\nIf unspecified, defaults to \"root\"."
     },
     {
       "name": "password",
       "type": "text",
-      "description": "The database's password."
+      "description": "The password to connect to the database."
     },
     {
       "name": "query",
       "type": "text",
-      "description": "The query to be passed to the database."
+      "description": "The SQL query reading from the database (e.g. `SELECT * from table WHERE ...`)."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A datatable containing the imported data."
     }
   ]
 }

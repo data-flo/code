@@ -5,7 +5,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A collection to which the text will be added."
+      "description": "The collection to which the text will be added."
     },
     {
       "name": "name",
@@ -15,14 +15,14 @@
     {
       "name": "text",
       "type": "text",
-      "description": "A text to be added to the collection."
+      "description": "The text to be added to the collection."
     }
   ],
   "output": [
     {
       "name": "collection",
       "type": "collection",
-      "description": "A copy of the collection with the text."
+      "description": "A collection with the text added."
     }
   ]
 }

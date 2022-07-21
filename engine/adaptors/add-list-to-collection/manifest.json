@@ -5,7 +5,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A collection to which the list will be added."
+      "description": "The collection to which the list will be added."
     },
     {
       "name": "name",
@@ -15,14 +15,14 @@
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be added to the collection."
+      "description": "The list to be added to the collection."
     }
   ],
   "output": [
     {
       "name": "collection",
       "type": "collection",
-      "description": "A copy of the collection with the list."
+      "description": "A collection with the list added."
     }
   ]
 }

@@ -5,18 +5,18 @@
     {
       "name": "text",
       "type": "text",
-      "description": "A text value to be searched."
+      "description": "The text value to be searched."
     },
     {
       "name": "pattern",
       "type": "text",
-      "description": "A text or a regular expression to be replaced.\nRegular expressions must be wrapped with `/` character (e.g. `/.*/`)."
+      "description": "The text or a regular expression to be replaced.\nRegular expressions must be wrapped with `/` character (e.g. `/.*/`)."
     },
     {
       "name": "ignore case",
       "type": "boolean",
       "default": true,
-      "description": "Whether lowercase and uppercase letters should be treated as equivalent. Defaults to `True`."
+      "description": "Whether lowercase and uppercase letters should be treated as equivalent. \nIf unspecified, defaults to `True`."
     }
   ],
   "output": [

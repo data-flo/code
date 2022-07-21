@@ -1,5 +1,5 @@
 {
-  "description": "Merges rows of two datatables into a new datatable.",
+  "description": "Appends rows of two datatables into a new datatable based on common column names.",
   "category": "Data Tables",
   "input": [
     {
@@ -15,13 +15,13 @@
     {
       "name": "columns",
       "type": "map",
-      "description": "Specifies which columns to be included.\nIf unassigned, all columns in both datatables will be included.",
+      "description": "Specifies which columns to be included.\nIf unspecified, all columns in both datatables will be included.",
       "default": null
     },
     {
       "name": "intersect columns",
       "type": "boolean",
-      "description": "Specifies whether to only include columns which exist in both datatables.\nIf unassigned, it defaults to `False`.",
+      "description": "Specifies whether to only include columns which exist in both datatables.\nIf unspecified, defaults to `False` (all columns from both datatables will be included).",
       "default": false
     }
   ],
@@ -29,7 +29,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable containing joined rows and columns."
+      "description": "A datatable containing rows from both datatables ."
     }
   ]
 }

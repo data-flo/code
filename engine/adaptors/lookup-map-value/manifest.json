@@ -1,21 +1,21 @@
 {
-  "description": "Looks up a value in a map.",
+  "description": "Finds a key in a map and returns the paired (associated) value.",
   "category": "Map Manipulation",
   "input": [
     {
       "name": "dictionary",
       "type": "map",
-      "description": "A map dictionary to lookup."
+      "description": "The map to lookup the key-value pairing."
     },
     {
       "name": "query",
       "type": "text",
-      "description": "The key in `dictionary`."
+      "description": "The key to be found."
     },
     {
       "name": "default",
       "type": "text",
-      "description": "The value to be returned if `query` is not found in `dictionary`.\n Defaults to `null`.",
+      "description": "The value to be returned if `query` is not found in `dictionary`.\nIf unspecified, defaults to `null`.",
       "default": null
     }
   ],

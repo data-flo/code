@@ -1,5 +1,5 @@
 {
-  "description": "Renders a Mustache template and returns rendered text.",
+  "description": "Sends an email message via a SMTP server.",
   "category": "Data Destinations",
   "input": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "stmp secure",
       "type": "boolean",
-      "description": "When true the connection will use TLS when connecting to server."
+      "description": "When set to 'True, the connection to the server will use TLS protocol."
     },
     {
       "name": "from address",
@@ -52,7 +52,7 @@
     {
       "name": "message id",
       "type": "text",
-      "description": "The final Message-Id value retruned by the SMTP server."
+      "description": "The final Message-Id value returned by the SMTP server."
     },
     {
       "name": "response",

@@ -5,17 +5,17 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "Data to be imported."
+      "description": "The datatable to be exported."
     },
     {
       "name": "columns",
       "type": "map",
-      "description": "A map of column name to data type."
+      "description": "The map of column name to data type."
     },
     {
       "name": "filename",
       "type": "text",
-      "description": "The name of the file to create.\nDefaults to `file.dbf`.",
+      "description": "The name of the file to create.\nIf unspecified, defaults to `file.dbf`.",
       "default": "file.dbf"
     }
   ],
@@ -23,7 +23,7 @@
     {
       "name": "dbf",
       "type": "file",
-      "description": ""
+      "description": "A DBF file"
     }
   ]
 }

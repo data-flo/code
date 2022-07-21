@@ -5,17 +5,17 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable which contains columns to be renamed."
+      "description": "The datatable which contains columns to be renamed."
     },
     {
       "name": "mappings",
       "type": "datatable",
-      "description": "A datatable which contains the following columns: `old column`, `old value`, `new column`, and `new value`."
+      "description": "The datatable which contains the following columns: `old column`, `old value`, `new column`, and `new value`."
     },
     {
       "name": "discard",
       "type": "boolean",
-      "description": "Specifies whether to discard columns which are not included in `mappings`. Defaults to `true`.",
+      "description": "Specifies whether to discard columns which are not included in `mappings`.\nIf unspecified, defaults to `True`.",
       "default": true
     }
   ],
@@ -23,7 +23,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the columns mapped."
+      "description": "A datatable with the columns renamed."
     }
   ]
 }

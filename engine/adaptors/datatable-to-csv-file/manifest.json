@@ -11,18 +11,18 @@
       "name": "separator",
       "type": "text",
       "default": ",",
-      "description": "Character used as column delimiter.\nDefaults to `,`."
+      "description": "The character used as column delimiter.\nIf unspecified, defaults to `,`."
     },
     {
       "name": "newline",
       "type": "text",
       "default": "\n",
-      "description": "Character used as row delimiter.\nDefaults to `\\n` (newline)."
+      "description": "The character used as row delimiter.\nIf unspecified, defaults to `\\n` (newline)."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to be exported to the CSV file.\nIf unspecified, all columns will be exported.",
+      "description": "The list of columns to be exported to the CSV file.\nIf unspecified, all columns will be exported.",
       "default": null
     },
     {

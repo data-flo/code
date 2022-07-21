@@ -1,24 +1,24 @@
 {
-  "description": "Selects a list of columns from datatable.",
+  "description": "Selects a list of columns from a datatable in a specified order.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing columns to be selected."
+      "description": "The datatable containing columns to be selected."
 
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to be included."
+      "description": "The list of columns to be included in the specified order."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the selected columns."
+      "description": "A datatable with the selected columns."
     }
   ]
 }

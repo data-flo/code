@@ -16,7 +16,7 @@
     {
       "name": "reference format",
       "type": "text",
-      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nDefaults to `ISO 8601`.",
+      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nIf unspecified, defaults to `ISO 8601`.",
       "default": "ISO8601"
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "value format",
       "type": "text",
-      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nDefaults to `ISO 8601`.",
+      "description": "Format tokens based on https://momentjs.com/docs/#/displaying/format/.\nIf unspecified, defaults to `ISO 8601`.",
       "default": "ISO8601"
     },
     {
@@ -45,7 +45,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the new column added."
+      "description": "A datatable with the new column added."
     }
   ]
 }

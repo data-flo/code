@@ -1,5 +1,5 @@
 {
-  "description": "Removes columns whose name contains a string or matches regular expression from a datatable.",
+  "description": "Removes columns whose name contains a string or matches a regular expression from a datatable.",
   "category": "Data Tables",
   "input": [
     {
@@ -17,12 +17,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the columns matching the string or regular expression removed."
+      "description": "A datatable with the columns matching the string or regular expression removed."
     },
     {
       "name": "complementary",
       "type": "datatable",
-      "description": "A new datatable with the columns matching the string or regular expression kept."
+      "description": "A datatable with the columns matching the string or regular expression kept."
     }
   ]
 }

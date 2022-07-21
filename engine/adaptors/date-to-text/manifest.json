@@ -12,7 +12,7 @@
     {
       "name": "format",
       "type": "text",
-      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table. \nDefaults to `ISO 8601`.",
+      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table. \nIf unspecified, defaults to `ISO 8601`.",
       "default": ""
     },
     {

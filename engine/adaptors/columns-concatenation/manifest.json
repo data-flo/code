@@ -15,19 +15,19 @@
     {
       "name": "delimiter",
       "type": "text",
-      "description": "Specifies text to separate each concatenated value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to separate each concatenated value.\nIf unspecified, defaults to `\"\"` (blank).",
       "default": ""
     },
     {
       "name": "prefix",
       "type": "text",
-      "description": "Specifies text to be prefixed to each concatenated value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to be prefixed to each concatenated value.\nIf unspecified, defaults to `\"\"` (blank).",
       "default": ""
     },
     {
       "name": "postfix",
       "type": "text",
-      "description": "Specifies text to be postfixed to each concatenated value. Defaults to `\"\"` (blank).",
+      "description": "Specifies text to be postfixed to each concatenated value.\nIf unspecified, defaults to `\"\"` (blank).",
       "default": ""
     },
     {

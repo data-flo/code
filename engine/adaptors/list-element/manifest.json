@@ -1,17 +1,17 @@
 {
-  "description": "Returns an element of list at a specified index.",
+  "description": "Returns an element of a list at a specified index.",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be searched."
+      "description": "The list to be searched."
     },
     {
       "name": "index",
       "type": "text",
       "default": 1,
-      "description": "The one-based index of the element to be returned. Defaults to 1."
+      "description": "The one-based index of the element to be returned.\nIf unspecified, defaults to 1."
     }
   ],
   "output": [

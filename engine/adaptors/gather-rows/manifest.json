@@ -10,18 +10,18 @@
     {
       "name": "columns",
       "type": "list",
-      "description": "The list of columns which will not be reshaped. \n If unspecified, all columns will be reshaped."
+      "description": "The list of columns which will not be reshaped. \nIf unspecified, all columns will be reshaped."
     },
     {
       "name": "key",
       "type": "text",
-      "description": "The name of the column to which keys are added.\nDefaults to `key`.",
+      "description": "The name of the column to which keys are added.\nIf unspecified, defaults to `key`.",
       "default": "key"
     },
     {
       "name": "value",
       "type": "text",
-      "description": "The name of the column to which values are added.\nDefaults to `value`.",
+      "description": "The name of the column to which values are added.\nIf unspecified, defaults to `value`.",
       "default": "value"
     }
   ],

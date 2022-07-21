@@ -5,19 +5,19 @@
     {
       "name": "url",
       "type": "url",
-      "description": "The URL to with the request is made."
+      "description": "The URL to which the request is made."
     },
     {
       "name": "method",
       "type": "text",
-      "description": "The request command to use.\nDefaults to `\"POST\"`",
+      "description": "The request command to use.\nIf unspecified, defaults to `\"POST\"`.",
       "default": "POST"
     },
     {
       "name": "data",
       "type": "collection",
       "default": null,
-      "description": "The body of the HTTP request.\nDefaults to empty."
+      "description": "The body of the HTTP request.\nIf unspecified, defaults to empty."
     },
     {
       "name": "headers",

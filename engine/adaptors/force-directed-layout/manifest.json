@@ -5,7 +5,7 @@
     {
       "name": "graph",
       "type": "graph",
-      "description": "The object containing nodes and edges."
+      "description": "The graph structure."
     },
     {
       "name": "stiffness",
@@ -17,26 +17,26 @@
       "name": "repulsion",
       "type": "number",
       "default": 400.0,
-      "description": "How much each node should node push each other away. If unspecified, defaults to 400.0."
+      "description": "How much each node should node push each other away.\nIf unspecified, defaults to 400.0."
     },
     {
       "name": "damping",
       "type": "number",
       "default": 0.5,
-      "description": "The amount to lessen the force to be applied. If unspecified, defaults to 0.5."
+      "description": "The amount to lessen the force to be applied.\nIf unspecified, defaults to 0.5."
 
     },
     {
       "name": "minEnergyThreshold",
       "type": "number",
       "default": null,
-      "description": "The minimum amount of force that should be applied. If unspecified, defaults to null."
+      "description": "The minimum amount of force that should be applied.\nIf unspecified, defaults to null."
     },
     {
       "name": "maxSpeed",
       "type": "number",
       "default": null,
-      "description": "The maximum amount of speed that should be applied. If unspecified, defaults to null."
+      "description": "The maximum amount of speed that should be applied.\nIf unspecified, defaults to null."
     }
   ],
   "output": [

@@ -1,11 +1,11 @@
 {
-  "description": "Retrieves a remote file from a remote network server.",
+  "description": "Imports a remote file from a remote network server.",
   "category": "Data Sources",
   "input": [
     {
       "name": "address",
       "type": "text",
-      "description": "The the full address of file on the network.\nTakes the form of `\\\\server\\path\\file.txt` or `//server/path/file.text` where server is either a host name or an IP address."
+      "description": "The full address of the file on the network.\nTakes the form of `\\\\server\\path\\file.txt` or `//server/path/file.text` where server is either a host name or an IP address."
     },
     {
       "name": "encoding",
@@ -18,7 +18,7 @@
     {
       "name": "file",
       "type": "file",
-      "description": "The retrieved file."
+      "description": "The imported file."
     }
   ]
 }

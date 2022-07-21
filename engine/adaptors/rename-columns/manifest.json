@@ -1,22 +1,22 @@
 {
-  "description": "Renames an existing column in a datatable.",
+  "description": "Renames existing columns in a datatable.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable which contains columns to be renamed."
+      "description": "The datatable containing columns to be renamed."
 
     },
     {
       "name": "mapping",
       "type": "map",
-      "description": "A mapping of old column names to new ones."
+      "description": "The mapping of old column names to new column names."
     },
     {
       "name": "discard",
       "type": "boolean",
-      "description": "Specifies whether to discard columns which are not included in `mapping`. Defaults to `true`.",
+      "description": "Specifies whether to discard columns which are not included in `mapping`. \nIf unspecified, defaults to `True` (unmapped columns are removed).",
       "default": true
     }
   ],
@@ -24,7 +24,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the columns renamed."
+      "description": "A datatable with the columns renamed."
     }
   ]
 }

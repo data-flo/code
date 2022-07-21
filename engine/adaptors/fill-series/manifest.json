@@ -5,13 +5,13 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be filled."
+      "description": "The datatable to be filled."
 
     },
     {
       "name": "column",
       "type": "text",
-      "description": "The name of a column in `data` to be filled."
+      "description": "The name of the column in `data` to be filled."
     },
     {
       "name": "start",
@@ -24,7 +24,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with specified column filled."
+      "description": "A datatable with specified column filled."
     }
   ]
 }

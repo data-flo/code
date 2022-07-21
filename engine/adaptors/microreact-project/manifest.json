@@ -1,18 +1,18 @@
 {
-  "description": "Extracts data from a Microreact project.",
+  "description": "Imports metadata table from a Microreact project.",
   "category": "Data Sources",
   "input": [
     {
       "name": "url",
       "type": "text",
-      "description": "A valid Microreact project (e.g. https://microreact.org/project/Ny8H4gsH)."
+      "description": "The URL of the Microreact project (e.g. https://microreact.org/project/Ny8H4gsH)."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "All project data rows."
+      "description": "A datatable containing the project rows."
     },
     {
       "name": "sourceUrl",

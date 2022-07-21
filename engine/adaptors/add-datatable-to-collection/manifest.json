@@ -5,7 +5,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A collection to which the datatable will be added."
+      "description": "The collection to which the datatable will be added."
     },
     {
       "name": "name",
@@ -15,14 +15,14 @@
     {
       "name": "datatable",
       "type": "datatable",
-      "description": "A datatable to be added to the collection."
+      "description": "The datatable to be added to the collection."
     }
   ],
   "output": [
     {
       "name": "collection",
       "type": "collection",
-      "description": "A copy of the collection with the datatable."
+      "description": "A collection with the datatable added."
     }
   ]
 }

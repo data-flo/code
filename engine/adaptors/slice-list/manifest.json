@@ -1,11 +1,11 @@
 {
-  "description": "Returns a portion of a list into a new list selected from begin to end.",
+  "description": "Selects values, based on position, from a list",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be sliced."
+      "description": "The list to be sliced."
     },
     {
       "name": "start",
@@ -30,7 +30,7 @@
     {
       "name": "values",
       "type": "list",
-      "description": "A new list containing the extracted elements."
+      "description": "A list containing the extracted elements."
     }
   ]
 }

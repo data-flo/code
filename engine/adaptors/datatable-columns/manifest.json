@@ -12,7 +12,7 @@
     {
       "name": "columns",
       "type": "list",
-      "description": "The list of column names." 
+      "description": "A list of column names." 
     }
   ]
 }

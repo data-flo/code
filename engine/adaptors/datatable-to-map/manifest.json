@@ -10,13 +10,13 @@
     {
       "name": "key column",
       "type": "text",
-      "description": "The name of the column which contains keys.\n If unspecified, defaults to `key`.",
+      "description": "The name of the column which contains keys.\nIf unspecified, defaults to `key`.",
       "default": "key"
     },
     {
       "name": "value column",
       "type": "text",
-      "description": "The name of the column which contains values.\n If unspecified, defaults to `value`.",
+      "description": "The name of the column which contains values.\nIf unspecified, defaults to `value`.",
       "default": "value"
     }
   ],

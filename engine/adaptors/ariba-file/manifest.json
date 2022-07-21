@@ -5,7 +5,7 @@
     {
       "name": "file",
       "type": "file",
-      "description": "A .csv summary file produced by ARIBA."
+      "description": "The .csv summary file produced by ARIBA."
     }
   ],
   "output": [

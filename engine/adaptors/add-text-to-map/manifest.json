@@ -5,7 +5,7 @@
     {
       "name": "map",
       "type": "map",
-      "description": "A map to which the value will be added.\nIf unspecified, the value will be added to a new map.",
+      "description": "The map to which the value will be added.\nIf unspecified, the value will be added to a new map.",
       "default": null
     },
     {
@@ -21,7 +21,7 @@
     {
       "name": "overwrite",
       "type": "boolean",
-      "description": "Whether to overwrite the value if the specified key already exists in the map.\nDefaults to True`.",
+      "description": "Whether to overwrite the value if the specified key already exists in the map.\nIf unspecified, defaults to True`.",
       "default": true
     }
   ],

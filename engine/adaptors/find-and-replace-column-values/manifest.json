@@ -5,12 +5,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched."
+      "description": "The datatable to be searched."
     },
     {
       "name": "find column",
       "type": "text",
-      "description": "The name of a column in data to be searched."
+      "description": "The name of the column in data to be searched."
     },
     {
       "name": "find pattern",
@@ -20,12 +20,12 @@
     {
       "name": "replace column",
       "type": "text",
-      "description": "The name of a column in data to be searched."
+      "description": "The name of the column in data to contain replaced values."
     },
     {
       "name": "replace pattern",
       "type": "text",
-      "description": "A text or a regular expression to be replaced. Regular expressions must be wrapped with `/` character (e.g. `/.*/`)."
+      "description": "A text or a regular expression to replace the 'find pattern'. Regular expressions must be wrapped with `/` character (e.g. `/.*/`)."
     },
     {
       "name": "replacement",
@@ -37,7 +37,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with target column added."
+      "description": "A datatable with values replaced."
     }
   ]
 }
