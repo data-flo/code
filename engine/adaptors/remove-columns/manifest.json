@@ -5,12 +5,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched."
+      "description": "The datatable containing the columns to be removed."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns in `data` to be removed.",
+      "description": "The list of columns to be removed.",
       "default": null
     }
   ],
@@ -18,7 +18,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the specified columns removed."
+      "description": "A datatable with the specified columns removed."
     }
   ]
 }

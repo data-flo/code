@@ -5,13 +5,13 @@
     {
       "name": "file",
       "type": "file",
-      "description": "A file to be converted to text."
+      "description": "The file to be converted to text."
     },
     {
       "name": "encoding",
       "type": "text",
       "default": "utf8",
-      "description": "The method of converting the file's data. \nSupported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1` \nDefaults to `utf8`"
+      "description": "The method of converting the file's data. \nSupported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1` \nIf unspecified, defaults to `utf8`"
     }
   ],
   "output": [

@@ -5,31 +5,31 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to sum."
+      "description": "The datatable to sum."
     },
     {
       "name": "group by",
       "type": "list",
-      "description": "Columns to group by.",
+      "description": "The columns to group by.",
       "default": null
     },
     {
       "name": "start",
       "type": "integer",
       "default": 1,
-      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `1` (first element in the list)."
+      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the list.\nIf unspecified, defaults to `1` (first element in the list)."
     },
     {
       "name": "end",
       "type": "integer",
       "default": null,
-      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `-1` (the last element in the list)."
+      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the list.\nIf unspecified, defaults to `-1` (the last element in the list)."
     },
     {
       "name": "limit",
       "type": "integer",
       "default": null,
-      "description": "A positive integer specifying a limit on the number of elements to be extracted.\nDefaults to `null` (no limit)."
+      "description": "A positive integer specifying a limit on the number of elements to be extracted.\nIf unspecified, defaults to `null` (no limit)."
     }
   ],
   "output": [

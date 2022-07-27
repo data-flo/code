@@ -1,18 +1,18 @@
 {
-  "description": "Reads data from a dBASE (`.dbf`) file.",
+  "description": "Converts data from a dBASE (`.dbf`) file to a datatable.",
   "category": "Data Sources",
   "input": [
     {
       "name": "dbf",
       "type": "file",
-      "description": "A dBASE (`.dbf`) file."
+      "description": "The dBASE (`.dbf`) file."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "Data read from the file."
+      "description": "A datatable containing converted information."
     }
   ]
 }

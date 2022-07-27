@@ -41,7 +41,7 @@
     {
       "name": "target",
       "type": "text",
-      "description": "The name of the column to which converted values are added.\nIf unspecified, it defaults to the value of `column`.",
+      "description": "The name of the column to which converted values are added.\nIf unspecified, defaults to the value of `column`.",
       "default": null
     }
   ],
@@ -49,7 +49,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with target column added."
+      "description": "A datatable with converted column added."
     }
   ]
 }

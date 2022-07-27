@@ -1,11 +1,11 @@
 {
-  "description": "Reads a datatable from a SQLite DB file.",
+  "description": "Imports data from a SQLite file.",
   "category": "Data Destinations",
   "input": [
     {
       "name": "sqlite",
       "type": "file",
-      "description": "The SQLite DB file from which the data will be imported."
+      "description": "The SQLite file from which the data will be imported."
     },
     {
       "name": "query",
@@ -17,7 +17,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A datatable containing the imported data."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "description": "Downloads a file from an S3 endpoint",
+  "description": "Imports a file from an S3 compatible endpoint,",
   "category": "Data Sources",
   "input": [
     {

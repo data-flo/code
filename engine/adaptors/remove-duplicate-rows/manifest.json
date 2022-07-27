@@ -1,11 +1,11 @@
 {
-  "description": "Finds rows in a datatable that are duplicated and removes the duplicates into a duplicates datatable.",
+  "description": "Removes duplicate rows from a datatable.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched for duplicates."
+      "description": "The datatable containing duplicate rows."
 
     }
   ],
@@ -13,12 +13,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with only unique rows."
+      "description": "A datatable containing only unique rows, including the first instance of duplicate rows."
     },
     {
       "name": "duplicates",
       "type": "datatable",
-      "description": "A new datatable with the duplicate rows."
+      "description": "A datatable containing duplicate rows."
     }
   ]
 }

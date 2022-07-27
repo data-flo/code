@@ -5,12 +5,12 @@
     {
       "name": "left",
       "type": "text",
-      "description": "First text to be concatenated"
+      "description": "The first text to be concatenated"
     },
     {
       "name": "right",
       "type": "text",
-      "description": "Second text to be concatenated"
+      "description": "The second text to be concatenated"
     }
   ],
   "output": [

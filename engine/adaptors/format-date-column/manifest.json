@@ -1,6 +1,6 @@
 
 {
-  "description": "Formats date/time values within a datatable column",
+  "description": "Formats date/time values within a datatable column.",
   "category": "Data Tables",
   "input": [
     {
@@ -16,25 +16,25 @@
     {
       "name": "source format",
       "type": "text",
-      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table.\nDefaults to `ISO 8601`.",
+      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table.\nIf unspecified, defaults to `ISO 8601`.",
       "default": "ISO 8601"
     },
     {
       "name": "target column",
       "type": "text",
-      "description": "The name of the column to hold formatted values.\nIf unspecified, it defaults to the value of `source column`.",
+      "description": "The name of the column to hold formatted values.\nIf unspecified, defaults to the value of `source column`.",
       "default": null
     },
     {
       "name": "target format",
       "type": "text",
-      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table.\nDefaults to `yy-MM-dd`.",
+      "description": "Format tokens based on Unicode Technical Standard #35.\nSee: https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table.\nIf unspecified, defaults to `yy-MM-dd`.",
       "default": "yy-MM-dd"
     },
     {
       "name": "locale",
       "type": "text",
-      "description": "The language locale to be used when formatting the values.\nSee https://date-fns.org/v2.0.1/docs/I18n#supported-languages for a list of supported languages.\nnIf unspecified, `locale` defaults to `en-GB`.",
+      "description": "The language locale to be used when formatting the values.\nSee https://date-fns.org/v2.0.1/docs/I18n#supported-languages for a list of supported languages.\nIf unspecified, `locale` defaults to `en-GB`.",
       "default": "en-GB"
     }
   ],

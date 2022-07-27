@@ -11,20 +11,20 @@
       "name": "separator",
       "type": "text",
       "default": "",
-      "description": "Character used as column delimiter. Leave blank to auto-detect from a list of most common delimiters. Defaults to \"\" (blank)."
+      "description": "Character used as column delimiter. Leave blank to auto-detect from a list of most common delimiters.\nIf unspecified, defaults to \"\" (blank)."
     },
     {
       "name": "newline",
       "type": "text",
       "default": "",
-      "description": "Character used as row delimiter. Leave blank to auto-detect. Must be one of '\r', '\n', or '\r\n'. Defaults to \"\" (blank)."
+      "description": "Character used as row delimiter. Leave blank to auto-detect. Must be one of '\r', '\n', or '\r\n'.\nIf unspecified, defaults to \"\" (blank)."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable."
+      "description": "A datatable."
     }
   ]
 }

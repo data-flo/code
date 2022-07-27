@@ -1,24 +1,24 @@
 {
-  "description": "Converts a list to a datatable.",
+  "description": "Converts a list to a single-column datatable.",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be converted to a datatable."
+      "description": "The list to be converted to a datatable."
     },
     {
       "name": "column",
       "type": "text",
       "default": "value",
-      "description": "The name of the column in which the list elements will be added. Defaults to 'value'."
+      "description": "The name of the datatable column containing the list.\nIf unspecified, defaults to 'value'."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing the list elements."
+      "description": "A single-column datatable containing the list values."
     }
   ]
 }

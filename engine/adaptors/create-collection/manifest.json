@@ -5,7 +5,7 @@
     {
       "name": "initial entries",
       "type": "map",
-      "description": "An optional values to initiate the empty collection.",
+      "description": "Optional values to initiate the empty collection.",
       "default": null
     }
   ],
@@ -13,7 +13,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "The new collection."
+      "description": "The collection."
     }
   ]
 }

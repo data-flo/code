@@ -5,12 +5,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to sum."
+      "description": "The datatable to sum."
     },
     {
       "name": "group by",
       "type": "list",
-      "description": "Columns to group by.",
+      "description": "The columns to group by.",
       "default": null
     },
     {

@@ -1,5 +1,5 @@
 {
-  "description": "Forward geocode a place into latitude & longitude.",
+  "description": "Converts latitude & longitude in datatable columns to location names.",
   "category": "Data Tables",
   "input": [
     {
@@ -10,37 +10,37 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "The datatable containing the latitude & longitude columns to be converted."
     },
     {
       "name": "placeType",
       "type": "text",
-      "description": "The type of the geographic feature are available in the Mapbox geocoder. Valid options are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`. Defaults to `country`.",
+      "description": "The type of geographic location available in the Mapbox geocoder. Valid options are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`.\n If unspecified, defaults to `country`.",
       "default": "country"
     },
     {
       "name": "longitudeColumn",
       "type": "text",
       "default": "longitude",
-      "description": "The source column for the longitude result. Defaults to `longitude`."
+      "description": "The name of the column containing longitude values (in decimal degrees).\nA plus sign (+) denotes east longitude, and a minus sign (-) denotes west longitude.\nIf unspecified, defaults to `longitude`."
     },
     {
       "name": "latitudeColumn",
       "type": "text",
       "default": "latitude",
-      "description": "The source column for the latitude result. Defaults to `latitude`."
+      "description": "The name of the column containing latitude values (in decimal degrees).\nA number preceded by a sign character. A plus sign (+) denotes northern hemisphere, and a minus sign (-) denotes southern hemisphere.\nIf unspecified, defaults to `latitude`."
     },
     {
       "name": "resultColumn",
       "type": "text",
-      "description": "The target column for PlaceType from the query result."
+      "description": "The name of the column to contain location output."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A datatable with the location names added."
     }
   ]
 }

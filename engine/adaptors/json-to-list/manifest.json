@@ -5,7 +5,7 @@
     {
       "name": "json",
       "type": "text",
-      "description": "A text containing a JSON document."
+      "description": "The text containing a JSON document."
     },
     {
       "name": "path",

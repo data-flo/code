@@ -5,12 +5,12 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched."
+      "description": "The datatable to be searched."
     },
     {
       "name": "column",
       "type": "text",
-      "description": "The name of column in the datatable to be searched."
+      "description": "The name of the column to be searched."
     },
     {
       "name": "replacement",
@@ -22,7 +22,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the blank values replaced."
+      "description": "A datatable with the blank values in a column replaced."
     }
   ]
 }

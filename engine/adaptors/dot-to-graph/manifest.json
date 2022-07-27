@@ -5,7 +5,7 @@
     {
       "name": "dot",
       "type": "text",
-      "description": "Text in the .dot format."
+      "description": "The text in the .dot format."
     }
   ],
   "output": [

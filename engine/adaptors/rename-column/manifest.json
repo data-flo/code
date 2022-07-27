@@ -5,7 +5,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable which contains the column to be renamed."
+      "description": "The datatable which contains the column to be renamed."
 
     },
     {
@@ -23,7 +23,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with the column renamed."
+      "description": "A datatable with the column renamed."
     }
   ]
 }

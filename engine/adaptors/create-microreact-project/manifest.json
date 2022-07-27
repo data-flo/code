@@ -6,7 +6,7 @@
       "name": "name",
       "type": "text",
       "default": "Unnamed project",
-      "description": "The project name.\nDefaults to \"Unnamed project\"."
+      "description": "The project name.\nIf unspecified, defaults to \"Unnamed project\"."
     },
     {
       "name": "description",
@@ -17,7 +17,7 @@
     {
       "name": "data",
       "type": "text",
-      "description": "Data in CSV format or a URL linking to a CSV file."
+      "description": "The data in CSV format or a URL linking to a CSV file."
     },
     {
       "name": "tree",
@@ -35,7 +35,7 @@
       "name": "api",
       "type": "text",
       "default": "https://microreact.org/api",
-      "description": "The URL of the Microreact server API.\nDefaults to `https://microreact.org/api`."
+      "description": "The URL of the Microreact server API.\nIf unspecified, defaults to `https://microreact.org/api`."
     },
     {
       "name": "access token",
@@ -46,25 +46,25 @@
       "name": "id column",
       "type": "text",
       "default": null,
-      "description": "The column name that will be used as the ID.\nDefaults to `id`."
+      "description": "The column name that will be used as the ID.\nIf unspecified, defaults to `id`."
     },
     {
       "name": "timeline column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains the timeline data.\nDefaults to null."
+      "description": "The column name which contains the timeline data.\nIf unspecified, defaults to null."
     },
     {
       "name": "latitude column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains map latitude values.\nDefaults to null."
+      "description": "The column name which contains map latitude values.\nIf unspecified, defaults to null."
     },
     {
       "name": "longitude column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains map longitude values.\nDefaults to null."
+      "description": "The column name which contains map longitude values.\nIf unspecified, defaults to null."
     }
   ],
   "output": [

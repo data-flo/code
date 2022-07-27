@@ -5,32 +5,32 @@
     {
       "name": "csv",
       "type": "file",
-      "description": "A file containing a .csv or .tsv formatted data."
+      "description": "The file containing a .csv or .tsv formatted data."
     },
     {
       "name": "encoding",
       "type": "text",
       "default": "utf8",
-      "description": "Input file encoding. Supported encodings are: ascii, base64, binary, hex, ucs2, utf8, or latin1. Defaults to \"utf8\"."
+      "description": "Input file encoding. Supported encodings are: ascii, base64, binary, hex, ucs2, utf8, or latin1\n If unspecified, defaults to \"utf8\"."
     },
     {
       "name": "separator",
       "type": "text",
       "default": "",
-      "description": "Character used as column delimiter. Leave blank to auto-detect from a list of most common delimiters. Defaults to \"\" (blank)."
+      "description": "Character used as column delimiter. Leave blank to auto-detect from a list of most common delimiters\n If unspecified, defaults to \"\" (blank)."
     },
     {
       "name": "newline",
       "type": "text",
       "default": "",
-      "description": "Character used as row delimiter. Leave blank to auto-detect. Must be one of '\r', '\n', or '\r\n'. Defaults to \"\" (blank)."
+      "description": "Character used as row delimiter. Leave blank to auto-detect. Must be one of '\r', '\n', or '\r\n'.\n If unspecified, defaults to \"\" (blank)."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "An object containing columns and rows."
+      "description": "A datatable."
     }
   ]
 }

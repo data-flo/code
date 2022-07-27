@@ -5,19 +5,19 @@
     {
       "name": "list",
       "type": "list",
-      "description": "A list to which the value will be prepended."
+      "description": "The list to which the value will be prepended."
     },
     {
       "name": "value",
       "type": "text",
-      "description": "A value to append to the list."
+      "description": "The value to prepend to the list."
     }
   ],
   "output": [
     {
       "name": "list",
       "type": "list",
-      "description": "A new list with the value prepended."
+      "description": "A list with the value prepended."
     }
   ]
 }

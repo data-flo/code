@@ -15,7 +15,7 @@
     {
       "name": "placeColumn",
       "type": "text",
-      "description": "The name of the column containing locaton names."
+      "description": "The name of the column containing location names."
     },
     {
       "name": "feature types",
@@ -27,19 +27,19 @@
       "name": "longitudeColumn",
       "type": "text",
       "default": "longitude",
-      "description": "The name of the column for the longitude result. If unspecified, defaults to \"longitude\"."
+      "description": "The name of the column for the longitude result.\nIf unspecified, defaults to \"longitude\"."
     },
     {
       "name": "latitudeColumn",
       "type": "text",
       "default": "latitude",
-      "description": "The name of the column for the latitude result. If unspecified, defaults to \"latitude\"."
+      "description": "The name of the column for the latitude result.\nIf unspecified, defaults to \"latitude\"."
     },
     {
       "name": "typeColumn",
       "type": "text",
       "default": "type",
-      "description": "The name of the column to hold the place type. Defaults to \"type\"."
+      "description": "The name of the column to hold the place type.\n If unspecified, defaults to \"type\"."
     }
   ],
   "output": [

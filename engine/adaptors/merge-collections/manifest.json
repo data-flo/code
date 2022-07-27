@@ -17,7 +17,7 @@
     {
       "name": "collection",
       "type": "collection",
-      "description": "A new collection containing the merged entries."
+      "description": "A collection containing the merged collections."
     }
   ]
 }
