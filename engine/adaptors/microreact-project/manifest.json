@@ -1,5 +1,5 @@
 {
-  "description": "Imports metadata table from a Microreact project.",
+  "description": "Imports the metadata table from a Microreact project.",
   "category": "Data Sources",
   "input": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing the project rows."
+      "description": "A datatable containing the imported metadata."
     },
     {
       "name": "sourceUrl",

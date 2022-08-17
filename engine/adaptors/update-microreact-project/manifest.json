@@ -5,19 +5,19 @@
     {
       "name": "project",
       "type": "text",
-      "description": "The ID (e.g. `fCXBPv48KNkm5oZq8UWdHG`) or the URL (e.g. `https://microreact.org/project/fCXBPv48KNkm5oZq8UWdHG`) of the project to be updated."
+      "description": "The ID (e.g. `fCXBPv48KNkm5oZq8UWdHG`) or the URL (e.g. `https://microreact.org/project/fCXBPv48KNkm5oZq8UWdHG`) of an existing project to be updated."
     },
     {
       "name": "name",
       "type": "text",
       "default": "Unnamed project",
-      "description": "The project name.\nDefaults to \"Unnamed project\"."
+      "description": "The project name.\nIf unspecified, defaults to \"Unnamed project\"."
     },
     {
       "name": "description",
       "type": "text",
       "default": "",
-      "description": "An optional Markdown description."
+      "description": "An optional project description in Markdown format."
     },
     {
       "name": "data",
@@ -41,36 +41,36 @@
       "name": "api",
       "type": "text",
       "default": "https://microreact.org/api",
-      "description": "The URL of the Microreact server API.\nDefaults to `https://microreact.org/api`."
+      "description": "The URL of the Microreact server API.\nIf unspecified, defaults to `https://microreact.org/api`."
     },
     {
       "name": "access token",
       "type": "text",
-      "description": "An API access token.\nSee https://docs.microreact.org/api/access-tokens."
+      "description": "The API access token for a Microreact account.\nSee https://docs.microreact.org/api/access-tokens."
     },
     {
       "name": "id column",
       "type": "text",
       "default": null,
-      "description": "The column name that will be used as the ID.\nDefaults to `id`."
+      "description": "The column name in `data` that will be used as the unique row ID.\nIf unspecified, defaults to `id`."
     },
     {
       "name": "timeline column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains the timeline data.\nDefaults to null."
+      "description": "The column name which contains the timeline data.\nIf unspecified, defaults to null."
     },
     {
       "name": "latitude column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains map latitude values.\nDefaults to null."
+      "description": "The column name which contains latitude values.\nIf unspecified, defaults to null."
     },
     {
       "name": "longitude column",
       "type": "text",
       "default": null,
-      "description": "The column name which contains map longitude values.\nDefaults to null."
+      "description": "The column name which contains longitude values.\nIf unspecified, defaults to null."
     }
   ],
   "output": [

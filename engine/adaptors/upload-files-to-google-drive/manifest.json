@@ -5,7 +5,7 @@
     {
       "name": "files",
       "type": "list",
-      "description": "A list composed of file contents with one record per file."
+      "description": "The list composed of file contents with one record per file."
     },
     {
       "name": "folder",

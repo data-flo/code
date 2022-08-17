@@ -15,22 +15,22 @@
     {
       "name": "antibiotics",
       "type": "datatable",
-      "description": "A datatable containing `code`, `name`, `test` columns."
+      "description": "The datatable containing `code`, `name`, `test` columns."
     },
     {
       "name": "organisms",
       "type": "datatable",
-      "description": "A datatable containing `ORG`, `ORGANISM`, and `COMMON` columns."
+      "description": "The datatable containing `ORG`, `ORGANISM`, and `COMMON` columns."
     },
     {
       "name": "data",
       "type": "datatable",
-      "description": "Data to be imported."
+      "description": "The data to be imported."
     },
     {
       "name": "dbf",
       "type": "file",
-      "description": "A WHONET data file."
+      "description": "The WHONET data file."
     }
   ],
   "output": [

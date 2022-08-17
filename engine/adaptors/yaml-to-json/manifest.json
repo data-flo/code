@@ -5,7 +5,7 @@
     {
       "name": "yaml",
       "type": "text",
-      "description": "Text containing a YAML document."
+      "description": "The text containing a YAML document."
     }
   ],
   "output": [

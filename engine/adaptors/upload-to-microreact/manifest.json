@@ -6,30 +6,30 @@
       "name": "name",
       "type": "text",
       "default": "Unnamed project",
-      "description": "The new project's name. Defaults to \"Unnamed project\"."
+      "description": "The new project's name.\nIf unspecified, defaults to \"Unnamed project\"."
     },
     {
       "name": "data",
       "type": "text",
-      "description": "Text containing data in a .csv format."
+      "description": "The text containing data in a .csv format."
     },
     {
       "name": "tree",
       "type": "text",
       "default": null,
-      "description": "Text containing data in a .nwk format to build a phylogenetic tree. Defaults to null."
+      "description": "The text containing data in a .nwk format to build a phylogenetic tree.\nIf unspecified, defaults to null."
     },
     {
       "name": "network",
       "type": "text",
       "default": null,
-      "description": "Text containing data in a .fot format to build a network. Defaults to null."
+      "description": "The text containing data in a .fot format to build a network.\nIf unspecified, defaults to null."
     },
     {
       "name": "api",
       "type": "text",
       "default": "https://microreact.org/api",
-      "description": "The url of the microreact api.\nDefaults to `https://microreact.org/api`."
+      "description": "The url of the microreact api.\nIf unspecified, defaults to `https://microreact.org/api`."
     },
     {
       "name": "access token",
@@ -40,31 +40,31 @@
       "name": "idField",
       "type": "text",
       "default": null,
-      "description": "The column, from the data input, that will be used as the id of each row. Defaults to null."
+      "description": "The column, from the data input, that will be used as the id of each row.\nIf unspecified, defaults to null."
     },
     {
       "name": "timelineField",
       "type": "text",
       "default": null,
-      "description": "The column, from the data input, that contains the timeline data. Defaults to null."
+      "description": "The column, from the data input, that contains the timeline data.\nIf unspecified, defaults to null."
     },
     {
       "name": "timelineFormat",
       "type": "text",
       "default": null,
-      "description": "How to format the timelineField input. Defaults to null."
+      "description": "How to format the timeline field input.\nIf unspecified, defaults to null."
     },
     {
       "name": "mapLatitude",
       "type": "text",
       "default": null,
-      "description": "The column, from the data input, that contains the latitude data. Defaults to null."
+      "description": "The column, from the data input, that contains the latitude data.\nIf unspecified, defaults to null."
     },
     {
       "name": "mapLongitude",
       "type": "text",
       "default": null,
-      "description": "The column, from the data input, that contains the longitude data. Defaults to null."
+      "description": "The column, from the data input, that contains the longitude data.\nIf unspecified, defaults to null."
     }
   ],
   "output": [

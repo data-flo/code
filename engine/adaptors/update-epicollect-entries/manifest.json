@@ -1,37 +1,37 @@
 {
-  "description": "Imports data to an Epicollect5 project.",
+  "description": "Exports data to an Epicollect5 project.",
   "category": "Data Sources",
   "input": [
     {
       "name": "url",
       "type": "text",
-      "description": "A valid Epicollect5 project URL (e.g. https://five.epicollect.net/project/ec5-demo-project)."
+      "description": "The valid Epicollect5 project URL (e.g. https://five.epicollect.net/project/ec5-demo-project)."
     },
     {
       "name": "client id",
       "type": "text",
-      "description": "The Epicollect5 Client ID.\nSee https://epicollect5.gitbooks.io/epicollect5-api/content/client-credentials-grant/create-client-app.html."
+      "description": "The Epicollect5 Client ID."
     },
     {
       "name": "client secret",
       "type": "text",
-      "description": "The Epicollect5 Client Sercret.\nSee https://epicollect5.gitbooks.io/epicollect5-api/content/client-credentials-grant/create-client-app.html."
+      "description": "The Epicollect5 Client Secret."
     },
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing entries to be imported to the project."
+      "description": "The datatable containing entries to be imported to the project."
     },
     {
       "name": "entry id column",
       "type": "text",
-      "description": "The name of the column in `data` which holds the IDs of the entries.\nDefaults to `\"ec5_uuid\"`.",
+      "description": "The name of the column in `data` which holds the IDs of the entries.\nIf unspecified, defaults to `\"ec5_uuid\"`.",
       "default": "ec5_uuid"
     },
     {
       "name": "form index",
       "type": "integer",
-      "description": "The index of the Epicollect form.\nDefaults to `0`.",
+      "description": "The index of the Epicollect form.\nIf unspecified, defaults to `0`.",
       "default": 0
     }
   ],
@@ -39,7 +39,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A copy of `data` with a new `status` column added."
+      "description": "A datatable with a new `status` column added."
     }
   ]
 }

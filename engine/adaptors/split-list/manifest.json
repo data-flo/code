@@ -1,40 +1,40 @@
 {
-  "description": "Splits a list into two lists at the frist instance of a specified separator element.",
+  "description": "Splits a list into two lists at the first instance of a specified separator element.",
   "category": "List Manipulation",
   "input": [
     {
       "name": "list",
       "type": "list",
-      "description": "A list to be sliced."
+      "description": "The list to be split."
     },
     {
       "name": "separator",
       "type": "text",
-      "description": "The element at which the list is split."
+      "description": "The specified separator at which the list is split."
     },
     {
       "name": "append",
       "type": "boolean",
       "default": false,
-      "description": "Whether to append the separator element to the first list.\nDefaults to `False`."
+      "description": "Whether to append the separator element to the first list.\nIf unspecified, defaults to `False`."
     },
     {
       "name": "prepend",
       "type": "boolean",
       "default": false,
-      "description": "Whether to prepend the separator element to the second list.\nDefaults to `False`."
+      "description": "Whether to prepend the separator element to the second list.\nIf unspecified, defaults to `False`."
     }
   ],
   "output": [
     {
       "name": "first",
       "type": "list",
-      "description": "A new list containing elements to the before the separator element."
+      "description": "A list containing the values before the separator element."
     },
     {
       "name": "second",
       "type": "list",
-      "description": "A new list containing elements to the after the separator element."
+      "description": "A list containing the values after the separator element."
     }
   ]
 }

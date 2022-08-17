@@ -16,13 +16,13 @@
       "name": "port",
       "type": "text",
       "default": "",
-      "description": "The port the host is exposing. Defaults to \"\"."
+      "description": "The port the host is exposing.\nIf unspecified, defaults to \"\"."
     },
     {
       "name": "pathname",
       "type": "text",
       "default": "",
-      "description": "The pathname to the resource of the target. Defaults to \"\"."
+      "description": "The pathname to the resource of the target.\nIf unspecified, defaults to \"\"."
     }
   ],
   "output": [

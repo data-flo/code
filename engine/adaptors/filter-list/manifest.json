@@ -17,12 +17,12 @@
     {
       "name": "values",
       "type": "list",
-      "description": "A list with the elements that match the testing pattern"
+      "description": "A list with the values that match the testing pattern"
     },
     {
       "name": "complementary",
       "type": "list",
-      "description": "A list with the elements that do not match the testing pattern."
+      "description": "A list with the values that do not match the testing pattern."
     }
   ]
 }

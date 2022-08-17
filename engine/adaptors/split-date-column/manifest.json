@@ -6,7 +6,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "The datatable you want to concatenate on to."
+      "description": "The datatable containing the date column to be split."
     },
     {
       "name": "source",
@@ -16,19 +16,19 @@
     {
       "name": "year",
       "type": "text",
-      "description": "The name of the column to hold year values.\nDefaults to `year`.",
+      "description": "The name of the column to hold year values.\nIf unspecified, defaults to `year`.",
       "default": "year"
     },
     {
       "name": "month",
       "type": "text",
-      "description": "The name of the column to hold month values.\nDefaults to `month`.",
+      "description": "The name of the column to hold month values.\nIf unspecified, defaults to `month`.",
       "default": "month"
     },
     {
       "name": "day",
       "type": "text",
-      "description": "The name of the column to hold day values.\nDefaults to `day`.",
+      "description": "The name of the column to hold day values.\nIf unspecified, defaults to `day`.",
       "default": "day"
     }
   ],

@@ -1,50 +1,50 @@
 {
-  "description": "Saves data to a Google Spreadsheet.\nThe Spreadsheet should be shared to with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
+  "description": "Exports data to an existing Google Sheets spreadsheet.\nPrivate spreadsheets should be shared with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission.",
   "category": "Data Destinations",
   "input": [
     {
       "name": "url",
       "type": "url",
-      "description": "A valid URL of a Google Spreadsheet to be updated.\nThe Spreadsheet should be shared to with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission."
+      "description": "A valid URL of a Google Spreadsheet to be updated.\nThe Spreadsheet should be shared with `data-flo@data-flo.iam.gserviceaccount.com` and given `can edit` permission."
     },
     {
       "name": "sheetname",
       "type": "text",
-      "description": "The title of Sheet to which the data will be written.\nIf unspecified, `sheet` defaults to the first sheet in the spreadsheet.",
+      "description": "The title of the sheet (tab) to which data will be exported.\nIf unspecified, the first sheet in the spreadsheet will be used.",
       "default": null
     },
     {
       "name": "header row",
       "type": "number",
-      "description": "The index of the sheet row which contains column headers.\nIf unassigned, `header row` defaults to `1` (the first row).",
+      "description": "The row number of the sheet row which contains column headers.\nIf unspecified, it defaults to `1` (the first row).",
       "default": 1
     },
     {
       "name": "data",
       "type": "datatable",
-      "description": "The data to be appended to the Google Spreadsheet."
+      "description": "The data to be exported to the Google Sheets spreadsheet."
     },
     {
       "name": "id column",
       "type": "text",
-      "description": "The name of the ID column in `data` and in the Google Spreadsheet."
+      "description": "The name of the column that contains the unique row IDs shared by `data` and the Google Sheets spreadsheet."
     },
     {
       "name": "append rows",
       "type": "boolean",
-      "description": "Specifies whether to create a new row when it is missing from the Google Spreadsheet. Defaults to `True`.",
+      "description": "When set to `False, only existing rows will be updated. When set to `True`, existing rows will be updated and new (non-existing) rows will be added to the end of the Google Sheets spreadsheet.\nIf unspecified, defaults to `True`.",
       "default": true
     },
     {
       "name": "append columns",
       "type": "boolean",
-      "description": "Specifies whether to create a column when it is missing from the Google Spreadsheet.\nDefaults to `True`.",
+      "description": "When set to `False, only existing columns will be updated. When set to `True`, existing columns will be updated and new (non-existing) columns will be added to the end of the Google Sheets spreadsheet.\nIf unspecified, defaults to `True`.",
       "default": true
     },
     {
       "name": "resize sheet",
       "type": "boolean",
-      "description": "Specifies whether to resize the Google Spreadsheet when more rows and columns are needed.\nDefaults to `True`.",
+      "description": "Specifies whether to resize the Google Sheets spreadsheet when more rows and columns are needed.\nIf unspecified, defaults to `True`.",
       "default": true
     }
   ],
@@ -52,22 +52,22 @@
     {
       "name": "updated",
       "type": "list",
-      "description": "A list of row IDs which have been updated."
+      "description": "A list of existing row IDs which have been updated."
     },
     {
       "name": "created",
       "type": "list",
-      "description": "A list of row IDs which have been appended when `append rows` is set to `True`."
+      "description": "A list of new row IDs which have been created when `append rows` is set to `True`."
     },
     {
       "name": "skipped",
       "type": "list",
-      "description": "A list of row IDs which are missing from the Google Spreadsheet."
+      "description": "A list of row IDs which in `data` which are missing from the Google Sheets spreadsheet when `append rows` is set to `False`."
     },
     {
       "name": "data",
       "type": "datatable",
-      "description": "The data appended to the Google Spreadsheet."
+      "description": "The data exported to the Google Sheets spreadsheet."
     }
   ]
 }

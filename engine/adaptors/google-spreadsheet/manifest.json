@@ -16,7 +16,7 @@
     {
       "name": "range",
       "type": "text",
-      "description": "A valid range of cells (e.g. 'A1:L512')that contain data.\nIf unspecified, the whole sheet will be imported.",
+      "description": "A valid range of cells (e.g. 'A1:L512') that contain data.\nIf unspecified, the whole sheet will be imported.",
       "default": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "name": "cache",
       "type": "number",
-      "description": "Specifies for how long (in hours) to cache the results. Defaults to `0` (do not cache).",
+      "description": "Specifies for how long (in hours) to cache the results. \nIf unspecified, defaults to `0` (do not cache).",
       "default": 0
     }
   ],

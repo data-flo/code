@@ -1,17 +1,17 @@
 {
-  "description": "Splits values in source column into a number of columns using a specified separator text to determine where to make each split.",
+  "description": "Splits values in a column into a number of columns using a specified separator to determine where to make each split.",
   "category": "Data Tables",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to be searched."
+      "description": "The datatable to be searched."
 
     },
     {
       "name": "source",
       "type": "text",
-      "description": "The name of a column in data to be split."
+      "description": "The name of the column to be split."
     },
     {
       "name": "separator",
@@ -21,14 +21,14 @@
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns to be added."
+      "description": "The list of columns to be added."
     }
   ],
   "output": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A new datatable with `columns` added."
+      "description": "A datatable with `columns` added."
     }
   ]
 }

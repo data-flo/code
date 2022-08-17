@@ -1,16 +1,16 @@
 {
-  "description": "Renders a Mustache template and returns rendered text.",
+  "description": "Creates text using a Mustache template (https://mustache.github.io/).",
   "category": "Text Manipulation",
   "input": [
     {
       "name": "template",
       "type": "text",
-      "description": "A mustache (https://mustache.github.io/) template.\nA mustache template is a string that contains any number of mustache variable tags. Tags are indicated by the double mustaches that surround them. `{{ person }}` is a tag."
+      "description": "The Mustache template text that contains any number of Mustache variable tags. Variable tags are indicated by the double mustaches that surround them, e.g. `{{ person }}` is a tag."
     },
     {
       "name": "variables",
       "type": "map",
-      "description": "A map where keys are the variable names and values are the variable values."
+      "description": "A map of variable names (map keys) with values (map values)."
     }
   ],
   "output": [

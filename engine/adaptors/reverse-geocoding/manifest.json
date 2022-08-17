@@ -15,7 +15,7 @@
     {
       "name": "placeType",
       "type": "text",
-      "description": "The type of geographic location available in the Mapbox geocoder. Valid options are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`.\n If unspecified, defaults to `country`.",
+      "description": "The type of geographic location available in the Mapbox geocoder. Valid options are `country`, `region`, `postcode`, `district`, `place`, `locality`, `neighborhood`, `address`, and `poi`.\nIf unspecified, defaults to `country`.",
       "default": "country"
     },
     {

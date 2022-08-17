@@ -5,12 +5,12 @@
     {
       "name": "stmp host",
       "type": "text",
-      "description": "The the hostname or IP address of the SMTP server."
+      "description": "The hostname or IP address of the SMTP server."
     },
     {
       "name": "stmp port",
       "type": "integer",
-      "description": "The the port of the SMTP server."
+      "description": "The port of the SMTP server."
     },
     {
       "name": "stmp username",
@@ -25,17 +25,17 @@
     {
       "name": "stmp secure",
       "type": "boolean",
-      "description": "When set to 'True, the connection to the server will use TLS protocol."
+      "description": "When set to 'True', the connection to the server will use TLS protocol."
     },
     {
       "name": "from address",
       "type": "text",
-      "description": "The email address of the sender.\nCan be plain `sender@example.com`’` or formatted `\"Sender Name\" sender@example.com`."
+      "description": "The email address of the sender.\nCan be plain `sender@example.com` or formatted `\"Sender Name\" sender@example.com`."
     },
     {
       "name": "to address",
       "type": "text",
-      "description": "Comma separated list or an array of recipients email addresses.\nCan be plain `recipient@example.com`’` or formatted `\"recipient Name\" recipient@example.com`."
+      "description": "A comma separated list or an array of recipients email addresses.\nCan be plain `recipient@example.com` or formatted `\"recipient Name\" recipient@example.com`."
     },
     {
       "name": "subject",

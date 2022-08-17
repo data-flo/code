@@ -1,11 +1,11 @@
 {
-  "description": "Creates an URL from a input text.",
+  "description": "Creates an URL from an input text.",
   "category": "URL Manipulation",
   "input": [
     {
       "name": "input",
       "type": "text",
-      "description": "A text containing a valid URL."
+      "description": "The text containing a valid URL."
     }
   ],
   "output": [
