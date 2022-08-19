@@ -11,6 +11,7 @@ module.exports = async function (args) {
       user: args.username,
       password: args.password,
       database: args.database,
+      readOnlyIntent: args["read-only"] ? true : undefined,
       options: {
         encrypt: true,
       },

@@ -34,6 +34,12 @@
       "name": "query",
       "type": "text",
       "description": "The SQL query reading from the database (e.g. `SELECT * from table WHERE ...`)."
+    },
+    {
+      "name": "read-only",
+      "type": "boolean",
+      "description": "When set to `True`, the connection to the server is made with parameter `ApplicationIntent` set to `READONLY`.",
+      "default": false
     }
   ],
   "output": [
