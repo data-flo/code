@@ -15,7 +15,7 @@
     {
       "name": "replacement",
       "type": "text",
-      "description": "A value to replace blanks."
+      "description": "A value to replace blank values."
     }
   ],
   "output": [

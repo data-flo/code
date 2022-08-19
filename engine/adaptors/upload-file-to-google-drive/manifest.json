@@ -5,7 +5,7 @@
     {
       "name": "file",
       "type": "file",
-      "description": "A file to be uploaded."
+      "description": "The file to be uploaded."
     },
     {
       "name": "file url",

@@ -1,5 +1,5 @@
 {
-  "description": "Imports a file from a SMB/CIFS server.",
+  "description": "Imports a file from a shared network drive using standard SMB/CIFS protocol.",
   "category": "Data Sources",
   "input": [
     {
@@ -16,13 +16,13 @@
     {
       "name": "domain",
       "type": "text",
-      "description": "the domain on which the user is registered.\ne.g. `WORKGROUP`.",
+      "description": "The domain on which the user is registered.\ne.g. `WORKGROUP`.",
       "default": ""
     },
     {
       "name": "username",
       "type": "text",
-      "description": "The username of the user required to access the specified service on the server.",
+      "description": "The username required to access the specified service on the server.",
       "default": ""
     },
     {
@@ -34,7 +34,7 @@
     {
       "name": "file path",
       "type": "text",
-      "description": "The relative path (e.g. `folder\\file.txt`) or the absolute path (e.g. `\\\\localhost\\public\\folder\\file.txt`) of the file to be accessed."
+      "description": "The relative path (e.g. `folder\\file.txt`) or the absolute path (e.g. `\\\\localhost\\public\\folder\\file.txt`) of the file to be imported."
     }
   ],
   "output": [

@@ -5,19 +5,19 @@
     {
       "name": "text",
       "type": "text",
-      "description": "A text to be split."
+      "description": "The text to be split."
     },
     {
       "name": "separator",
       "type": "text",
       "default": "\n",
-      "description": "The separator text, or regular expression, which denotes the points at which each split should occur. \nThe separator is treated a regular expression if it begins and ends with `/`. \nDefaults to `\n` (newline)."
+      "description": "The separator text, or regular expression, which denotes the points at which each split should occur. \nThe separator is treated a regular expression if it begins and ends with `/`. \nIf unspecified, defaults to `\n` (newline)."
     },
     {
       "name": "limit",
       "type": "integer",
       "default": null,
-      "description": "A positive integer specifying a limit on the number of splits to be found. \nDefaults to `null` (no limit)."
+      "description": "A positive integer specifying a limit on the number of splits to be found. \nIf unspecified, defaults to `null` (no limit)."
     }
   ],
   "output": [

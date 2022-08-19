@@ -1,11 +1,11 @@
 {
-  "description": "Gets the leaf labels from a Newick tree.",
+  "description": "Lists the leaf labels from a Newick tree.",
   "category": "Text Manipulation",
   "input": [
     {
       "name": "newick",
       "type": "text",
-      "description": "A tree in Newick format."
+      "description": "The tree in Newick format."
     }
   ],
   "output": [

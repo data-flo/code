@@ -10,7 +10,7 @@
     {
       "name": "query",
       "type": "text",
-      "description": "The query to be passed to the database."
+      "description": "The SQL query reading from the database (e.g. `SELECT * from table WHERE ...`)."
     }
   ],
   "output": [

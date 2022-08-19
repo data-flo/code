@@ -1,22 +1,22 @@
 {
-  "description": "Imports a spreadsheet file and converts to a datatable.\nSupported file formats: `.xlsx`, `.xlsm`, `.xlsb`, `.xls`, `.xls`, `.xls`, `.xls`, `.ods`, `.fods`, `.csv`, `.txt`, `.sylk`, `.html`, `.dif`, `.dbf`, `.rtf`, `.prn`, and `.eth`.",
+  "description": "Imports data from a spreadsheet file.",
   "category": "Data Sources",
   "input": [
     {
       "name": "file",
       "type": "file",
-      "description": "A list to be converted to a datatable."
+      "description": "The spreadsheet file in one of the following file formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.ods`, `.fods`, `.sylk`, `.html`, `.dif`, `.dbf`, `.rtf`, `.prn`, and `.eth`."
     },
     {
       "name": "sheetname",
       "type": "text",
       "default": null,
-      "description": "The name of sheet from which the data will be read.\nThe first sheet will be used if `sheetname` is unspecified."
+      "description": "The name of the sheet (tab) from which to import the data.\nIf unspecified, the first sheet will be used."
     },
     {
       "name": "range",
       "type": "text",
-      "description": "A valid sheet range which contains data.\nIf unspecified, the whole sheet will be included.",
+      "description": "A valid range of cells (e.g. `A1:L512`) that contain data.\nIf unspecified, the whole sheet will be included.",
       "default": null
     }
   ],
@@ -24,7 +24,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing the sheet data."
+      "description": "A datatable containing the imported data."
     }
   ]
 }

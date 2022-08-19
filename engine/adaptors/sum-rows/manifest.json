@@ -1,21 +1,21 @@
 {
-  "description": "Sums rows in specified columns",
+  "description": "Aggregates values in specified columns grouped by rows.",
   "category": "Data Manipulation",
   "input": [
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable to sum."
+      "description": "The datatable to be aggregated"
     },
     {
       "name": "sum columns",
       "type": "list",
-      "description": "Columns to sum."
+      "description": "The names of the columns to be summed."
     },
     {
       "name": "group columns",
       "type": "list",
-      "description": "Columns to group by.",
+      "description": "The names of the columns containing values to be grouped.",
       "default": null
     }
   ],
@@ -23,7 +23,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable in wide format."
+      "description": "A datatable with aggregated data."
     }
   ]
 }

@@ -11,7 +11,7 @@
       "name": "begin",
       "type": "integer",
       "default": 1,
-      "description": "The position of the first row to be selected.\n A negative number can be used to count from the end of the datatable (e.g. '-5' would start at the fifth-to-last row).\n If unspecified, defaults to '1' (first row of the datatable)"
+      "description": "The position of the first row to be selected.\nA negative number can be used to count from the end of the datatable (e.g. '-5' would start at the fifth-to-last row).\nIf unspecified, defaults to '1' (first row of the datatable)"
     },
     {
       "name": "end",

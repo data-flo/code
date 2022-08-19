@@ -11,13 +11,13 @@
       "name": "start",
       "type": "integer",
       "default": 1,
-      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `1` (first element in the list)."
+      "description": "One-based index at which to begin extraction.\nA negative index can be used, indicating an offset from the end of the list.\nIf unspecified, defaults to `1` (first element in the list)."
     },
     {
       "name": "end",
       "type": "integer",
       "default": null,
-      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the list.\nDefaults to `-1` (the last element in the list)."
+      "description": "One-based index at which to end extraction.\nA negative index can be used, indicating an offset from the end of the list.\nIf unspecified, defaults to `-1` (the last element in the list)."
     },
     {
       "name": "limit",

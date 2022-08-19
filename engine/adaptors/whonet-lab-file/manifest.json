@@ -5,7 +5,7 @@
     {
       "name": "lab",
       "type": "text",
-      "description": "A WHONET lab configuration file."
+      "description": "The WHONET lab configuration file."
     }
   ],
   "output": [

@@ -5,29 +5,29 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable containing data."
+      "description": "The datatable containing columns to be summed."
     },
     {
       "name": "columns",
       "type": "list",
-      "description": "A list of columns."
+      "description": "The list of columns."
     },
     {
       "name": "start value",
       "type": "number",
-      "description": "The start value of the series. Defaults to `0`.",
+      "description": "The start value of the series.\nIf unspecified, defaults to `0`.",
       "default": 0
     },
     {
       "name": "previous coefficient",
       "type": "number",
-      "description": "The coefficient applied to the previous value. Defaults to `1`.",
+      "description": "The coefficient applied to the previous value.\nIf unspecified, defaults to `1`.",
       "default": 1
     },
     {
       "name": "current coefficient",
       "type": "number",
-      "description": "The coefficient applied to the current value. Defaults to `1`.",
+      "description": "The coefficient applied to the current value.\nIf unspecified, defaults to `1`.",
       "default": 1
     }
   ],
@@ -35,7 +35,7 @@
     {
       "name": "data",
       "type": "datatable",
-      "description": "A datatable with the updated `columns`."
+      "description": "A datatable with the updated columns."
     }
   ]
 }

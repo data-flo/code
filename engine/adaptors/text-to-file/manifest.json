@@ -1,28 +1,28 @@
 {
-  "description": "Converts text a text to a file stream.",
+  "description": "Exports text as a file.",
   "category": "Text Manipulation",
   "input": [
     {
       "name": "text",
       "type": "text",
-      "description": "The contents of the file as text."
+      "description": "The text to be exported."
     },
     {
       "name": "encoding",
       "type": "text",
       "default": "utf8",
-      "description": "The encoding of text. \nSupported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1` \nDefaults to `utf8`"
+      "description": "The encoding of the text. \nSupported encodings are: `ascii`, `base64`, `binary`, `hex`, `ucs2`, `utf8`, or `latin1` \nIf unspecified, defaults to `utf8`"
     },
     {
       "name": "name",
       "type": "text",
-      "description": "An optional file name. \nDefaults to `Unnamed`.",
+      "description": "An optional file name. \nIf unspecified, defaults to `Unnamed`.",
       "default": "Unnamed"
     },
     {
       "name": "media type",
       "type": "text",
-      "description": "An optional MIME type describing the file content. \nDefaults to `text/plain`.",
+      "description": "An optional MIME type describing the file content. \nIf unspecified, defaults to `text/plain`.",
       "default": "text/plain"
     }
   ],
@@ -30,7 +30,7 @@
     {
       "name": "file",
       "type": "file",
-      "description": "A file stream with specified text content."
+      "description": "A file containing the text."
     }
   ]
 }
