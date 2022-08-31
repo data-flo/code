@@ -85,6 +85,7 @@ if (process.env.npm_lifecycle_script !== "nuxt build") {
 userAccounts(app, {
   userStore,
   url: config.passport.url,
+  allowedUsers: config.passport.allowedUsers,
   authPath: "/auth",
   successRedirect: `${config.passport.url}/transformations`,
   failureRedirect: `${config.passport.url}/signin`,
