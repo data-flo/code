@@ -1,5 +1,5 @@
 {
-  "description": "Filters blank rows in a datable column.",
+  "description": "Filters blank rows in a datatable column.",
   "category": "Data Tables",
   "input": [
     {
