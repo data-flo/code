@@ -3,6 +3,11 @@
 import distanceInWordsToNow from "date-fns/distance_in_words_to_now";
 import { compareDesc as compareDates } from "date-fns";
 
+const deprecatedAdaptors = [
+  "upload-to-microreact",
+  "discard-columns",
+];
+
 function compareStrings(a, b) {
   if (a < b) {
     return -1;
@@ -91,6 +96,9 @@ export const getters = {
     );
     const groups = {};
     for (const item of sortedItems) {
+      if (deprecatedAdaptors.includes(item.id)) {
+        continue;
+      }
       let label = "";
       switch (state.sortAdaptorsBy) {
         case "category":
@@ -146,10 +154,6 @@ export const getters = {
   },
   transformationGroups(state, getters, rootState) {
     const groups = {};
-    const deprecatedAdaptors = [
-      "upload-to-microreact",
-      "discard-columns",
-    ];
     for (const item of state.manifests) {
       if (item.type === "dataflow" && item.id === rootState.editor.id) {
         continue;
