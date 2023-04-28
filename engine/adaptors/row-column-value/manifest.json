@@ -4,7 +4,7 @@
   "input": [
     {
       "name": "data",
-      "type": "datatab;e",
+      "type": "datatabe",
       "description": "The datatable to be searched."
     },
     {
