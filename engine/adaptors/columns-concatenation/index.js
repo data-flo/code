@@ -4,7 +4,9 @@ module.exports = function (args) {
     throw new Error(`Data is missing columns '${missingColumns}'.`);
   }
 
-  const data = args.data.addColumn(
+  const data = args.data.clone();
+
+  data.addColumn(
     args.target,
     (row) => {
       const concatenated = Array.prototype.join.call(
